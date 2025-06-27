@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Astro: A New Front-End Framework"
+title: "مقدمة عن Astro: إطار عمل جديد للواجهة الأمامية"
 draft: false
 author: Jon Doe
 tags:
@@ -14,30 +14,25 @@ snippet: Astro is a modern front-end framework that brings an interesting
 publishDate: 2023-07-01 22:50
 category: Tech
 ---
-Astro is a modern front-end framework that provides developers with a faster way to build websites. It brings about an interesting paradigm shift in how we think about building modern web applications. 
 
-## What is Astro?
+Astro هو إطار عمل حديث للواجهة الأمامية يوفر للمطورين طريقة أسرع لبناء مواقع الويب. يقدم تحولًا مثيرًا في طريقة تفكيرنا حول بناء تطبيقات الويب الحديثة.
 
-Astro is a new type of JavaScript-based static site generator. Unlike other popular frameworks like React, Vue, and Angular, Astro does not send any JavaScript by default. Instead, Astro only sends HTML, CSS, and as little JavaScript as you need. This results in faster load times and better performance for your web apps.
+## ما هو Astro؟
 
-Astro is built to take advantage of modern browser features, like HTTP/2 and server components. This allows you to build highly interactive sites, without the typical cost associated with sending large JavaScript bundles to the client.
+Astro هو نوع جديد من مولدات المواقع الثابتة المبنية باستخدام JavaScript. وعلى عكس الأطر الشائعة الأخرى مثل React وVue وAngular، فإن Astro لا يرسل أي JavaScript بشكل افتراضي. بل يرسل فقط HTML وCSS وأقل كمية ممكنة من JavaScript حسب الحاجة. وهذا يؤدي إلى أوقات تحميل أسرع وأداء أفضل لتطبيقات الويب الخاصة بك.
 
+تم تصميم Astro للاستفادة من ميزات المتصفحات الحديثة، مثل HTTP/2 والمكونات الخادمية، مما يسمح لك ببناء مواقع تفاعلية للغاية دون التكاليف المعتادة المرتبطة بإرسال حزم JavaScript كبيرة إلى العميل.
 
-## Key Features of Astro
+## الميزات الرئيسية في Astro
 
+### لا JavaScript بشكل افتراضي
 
-### No JavaScript Sent By Default
+بشكل افتراضي، لا يرسل Astro أي JavaScript إلى العميل، مما يجعل موقعك سريعًا منذ البداية. ومع ذلك، لست مقيدًا بذلك، إذ يمكنك إضافة JavaScript بالقدر الذي تحتاجه.
 
-By default, Astro sends no JavaScript to the client. This makes your site fast out of the box. However, you're not restricted to this. You can add as much JavaScript as you want or need.
+### استخدم إطار JavaScript المفضل لديك
 
+من أهم نقاط قوة Astro قدرته على العمل مع أطر JavaScript متعددة. يمكنك استخدام مكونات من React أو Vue أو Svelte أو غيرها ضمن نفس المشروع. هذا يسمح لك باختيار الأداة الأنسب للمهمة دون الالتزام بتقنية معينة.
 
-### Use Your Favorite JavaScript Framework
+### صديق لتحسين محركات البحث (SEO)
 
-One of the key strengths of Astro is its ability to work with multiple JavaScript frameworks. You can use components from React, Vue, Svelte, and others within the same project. This allows you to choose the best tool for the job, without being tied to a specific technology.
-
-
-### SEO Friendly
-
-Astro's output is just HTML, CSS, and minimal JavaScript, making it perfect for search engine optimization (SEO). You can even prerender your pages, providing a fast initial load and excellent search engine discoverability.
-
-<a href="#top">[Top]</a>
+مخرجات Astro عبارة عن HTML وCSS وJavaScript بسيط، مما يجعله مثاليًا لتحسين محركات البحث. يمكنك حتى توليد صفحات مسبقة العرض (prerender)، مما يوفر تحميلًا أوليًا سريعًا وقابلية اكتشاف ممتازة عبر محركات البحث.

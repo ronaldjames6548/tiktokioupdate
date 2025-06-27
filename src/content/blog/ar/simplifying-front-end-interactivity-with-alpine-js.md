@@ -1,5 +1,5 @@
 ---
-title: Simplifying Front-End Interactivity with Alpine.js
+title: تبسيط التفاعل الأمامي باستخدام Alpine.js
 draft: false
 author: Jon Doe
 tags:
@@ -8,51 +8,43 @@ tags:
 image:
   src: /images/alpinjs.png
   alt: Alpine.js
-snippet: Alpine.js is a lightweight JavaScript framework for building
-  interactive front-end components with simplicity and flexibility.
+
+snippet: Alpine.js هو إطار عمل JavaScript خفيف يُستخدم لبناء مكونات واجهة مستخدم تفاعلية بسهولة ومرونة.
 publishDate: 2023-07-01 23:08
 category: Tech
 ---
-Alpine.js is a lightweight JavaScript framework used to build interactive front-end components. It's lean, easy-to-use, and harnesses the power of Vue's or React's interactivity, with the simplicity of using Tailwind CSS classes.
 
-## What is Alpine.js?
+**Alpine.js** هو إطار عمل JavaScript خفيف يُستخدم لبناء مكونات واجهة أمامية تفاعلية. يتميز بخفة الوزن، سهولة الاستخدام، واستخدامه لمفاهيم التفاعل الموجودة في Vue أو React مع الحفاظ على بساطة استخدام أسلوب كتابة كلاسات Tailwind CSS.
 
-Alpine.js is a minimal JavaScript framework for declarative programming. Unlike Vue or React, it doesn’t require a build step and it works directly in your HTML. It is great for sprinkling in small bits of interactivity to HTML rendered on the server, like dropdowns, tabs, and modals.
+## ما هو Alpine.js؟
 
-## Key Features of Alpine.js
+Alpine.js هو إطار عمل JavaScript صغير يركز على البرمجة الإعلانية (Declarative Programming). على عكس Vue أو React، لا يتطلب خطوات بناء معقدة ويمكن استخدامه مباشرة داخل ملف HTML. إنه مناسب لإضافة لمسات تفاعلية بسيطة إلى صفحات HTML التي يتم إنشاؤها من الخادم، مثل القوائم المنسدلة، علامات التبويب، النوافذ المنبثقة.
 
-### Lightweight and Easy to Use
+## الميزات الرئيسية لـ Alpine.js
 
-At around 10KB minified and gzipped, Alpine.js is significantly smaller than many of the other front-end JavaScript frameworks. It's also straightforward to use - if you're familiar with JavaScript and HTML, you'll be able to pick it up quickly.
+### خفيف الوزن وسهل الاستخدام
 
-### Declarative Programming
+بحجم يصل إلى **10KB** بعد الضغط (minified and gzipped)، يكون Alpine.js أخف بكثير من العديد من أطر العمل الأخرى. كما أنه سهل الاستخدام – إذا كنت معتادًا على استخدام HTML وJavaScript، فستتمكن من تعلمه بسرعة كبيرة.
 
-Alpine.js provides a way of managing state and behavior in a declarative manner, meaning your code describes what should be done, rather than how.
+### البرمجة الإعلانية (Declarative Programming)
 
-### Versatile
+يتيح لك Alpine.js إدارة الحالة والسلوك بطريقة إعلانية، مما يعني أن الكود الخاص بك يصف ما يجب القيام به، وليس الطريقة التي يتم بها تنفيذه.
 
-You can use Alpine.js on its own or in combination with other libraries or frameworks. It doesn't dictate your entire front-end structure, making it a perfect choice for adding interactivity to existing projects.
+### متعدد الاستخدامات
 
-## Getting Started with Alpine.js
+يمكنك استخدام Alpine.js بمفرده أو مع مكتبات أو أطر عمل أخرى. فهو لا يفرض عليك هيكلًا كاملًا للواجهة الأمامية، مما يجعله خيارًا مثاليًا لإضافة التفاعل إلى المشاريع الموجودة.
 
-To get started, include the script tag in your HTML file:
+## البدء مع Alpine.js
 
-```html
-<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-```
-
-Alpine.js provides you with a set of directives that you can use within your HTML like so:
+للاستخدام الأولي، يمكنك تضمين السكريبت مباشرة في ملف HTML الخاص بك:
 
 ```html
+<script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine @v2.x.x/dist/alpine.min.js" defer></script>
+
 <div x-data="{ open: false }">
-    <button @click="open = !open">Toggle</button>
+    <button @click="open = !open">تبديل</button>
 
     <div x-show="open">
-        This content will toggle.
+        سيتم إظهار هذا المحتوى عند التبديل.
     </div>
 </div>
-```
-
-In this example, when the button is clicked, the `open` data attribute is toggled, which in turn toggles the visibility of the div below it.
-
-Alpine.js brings a refreshing perspective to building interactive user interfaces. It's lightweight, straightforward, and a great choice for adding interactivity to your front-end applications without the weight of a larger framework.
