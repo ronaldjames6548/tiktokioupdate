@@ -75,7 +75,7 @@ export default defineConfig({
 
     if (exclude) {
       console.log("Excluded from sitemap:", page);
-    }
+    },
 
     return !exclude;
   }
