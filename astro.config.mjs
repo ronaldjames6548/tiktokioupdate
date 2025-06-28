@@ -71,8 +71,7 @@ export default defineConfig({
         return !(
           page.includes('/tag/') || 
           page.includes('/category/') ||
-          /\/blog\/\d+/.test(page) || // e.g. /blog/2/
-          /^\/(ar|de|es|fr|hi|id|it|ko|ms|nl|pt|ru|tl|tr)(\/blog|$)/.test(page) // e.g. /ar/, /ar/blog/
+          /\/blog\/\d+/.test(page)
         );
       }
     })
