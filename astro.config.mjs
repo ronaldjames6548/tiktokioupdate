@@ -76,13 +76,13 @@ sitemap({
       /\/blog\/\d+/.test(page) ||
 
       // ✅ Exclude all translated blog POSTS (e.g., /ar/blog/post-title/)
-      /^\/(ar|it)\/blog\//.test(page) && !/^\/(ar|it)\/blog\/$/.test(page);
+      /^\/(ar|it)\/blog\//.test(page) && !/^\/(ar|it)\/blog\/$/.test(page),
 
-    console.log("Excluded:", exclude ? page : "(included)", exclude);
+    console.log("Excluded:", exclude ? page : "(included)", exclude),
 
-    return !exclude;
+    return !exclude,
   }
-});
+}),
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
