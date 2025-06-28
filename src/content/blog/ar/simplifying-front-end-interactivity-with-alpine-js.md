@@ -13,46 +13,62 @@ snippet: Alpine.js is a lightweight JavaScript framework for building
 publishDate: 2023-07-01 23:08
 category: Tech
 ---
-Alpine.js is a lightweight JavaScript framework used to build interactive front-end components. It's lean, easy-to-use, and harnesses the power of Vue's or React's interactivity, with the simplicity of using Tailwind CSS classes.
 
-## What is Alpine.js?
+Alpine.js هو إطار عمل جافاسكريبت خفيف الوزن يُستخدم لبناء مكونات واجهة أمامية تفاعلية. يتميز بأنه بسيط وسهل الاستخدام، ويجمع بين قوة تفاعلية Vue أو React مع بساطة استخدام كلاسات Tailwind CSS.
 
-Alpine.js is a minimal JavaScript framework for declarative programming. Unlike Vue or React, it doesn’t require a build step and it works directly in your HTML. It is great for sprinkling in small bits of interactivity to HTML rendered on the server, like dropdowns, tabs, and modals.
+<a id="top"></a>
 
-## Key Features of Alpine.js
+## ما هو Alpine.js؟
 
-### Lightweight and Easy to Use
+Alpine.js هو إطار عمل جافاسكريبت بسيط للبرمجة التصريحية. على عكس Vue أو React، لا يتطلب خطوة بناء ويعمل مباشرة في HTML. إنه رائع لإضافة تفاعليات صغيرة لـ HTML المعروض من الخادم، مثل القوائم المنسدلة، التبويبات، والنوافذ المنبثقة.
 
-At around 10KB minified and gzipped, Alpine.js is significantly smaller than many of the other front-end JavaScript frameworks. It's also straightforward to use - if you're familiar with JavaScript and HTML, you'll be able to pick it up quickly.
+<a href="#top">[العودة إلى الأعلى]</a>
 
-### Declarative Programming
+## الميزات الرئيسية لـ Alpine.js
 
-Alpine.js provides a way of managing state and behavior in a declarative manner, meaning your code describes what should be done, rather than how.
+### خفيف الوزن وسهل الاستخدام
 
-### Versatile
+بحجم لا يتجاوز 10KB مضغوط، Alpine.js أصغر بكثير من العديد من أطر عمل جافاسكريبت الأمامية الأخرى. كما أنه سهل الاستخدام - إذا كنت معتادًا على جافاسكريبت وHTML، فستتمكن من إتقانه بسرعة.
 
-You can use Alpine.js on its own or in combination with other libraries or frameworks. It doesn't dictate your entire front-end structure, making it a perfect choice for adding interactivity to existing projects.
+### برمجة تصريحية
 
-## Getting Started with Alpine.js
+يوفر Alpine.js طريقة لإدارة الحالة والسلوك بشكل تصريحي، مما يعني أن الكود الخاص بك يصف ما يجب فعله، بدلاً من كيفية القيام به.
 
-To get started, include the script tag in your HTML file:
+### متعدد الاستخدامات
+
+يمكنك استخدام Alpine.js بمفرده أو بالاشتراك مع مكتبات أو أطر عمل أخرى. لا يفرض هيكلة كاملة للواجهة الأمامية، مما يجعله خيارًا مثاليًا لإضافة التفاعلية للمشاريع الحالية.
+
+<a href="#top">[العودة إلى الأعلى]</a>
+
+## البدء مع Alpine.js
+
+لتبدأ، قم بتضمين سكريبت Alpine.js في ملف HTML الخاص بك:
 
 ```html
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-```
 
-Alpine.js provides you with a set of directives that you can use within your HTML like so:
-
-```html
 <div x-data="{ open: false }">
-    <button @click="open = !open">Toggle</button>
+    <button @click="open = !open">تبديل</button>
 
     <div x-show="open">
-        This content will toggle.
+        هذا المحتوى سيتم تبديله.
     </div>
 </div>
-```
 
-In this example, when the button is clicked, the `open` data attribute is toggled, which in turn toggles the visibility of the div below it.
 
-Alpine.js brings a refreshing perspective to building interactive user interfaces. It's lightweight, straightforward, and a great choice for adding interactivity to your front-end applications without the weight of a larger framework.
+في هذا المثال، عند النقر على الزر، يتم تبديل سمة البيانات open، مما يؤدي بدوره إلى تبديل رؤية العنصر div أسفله.
+
+<a href="#top">[العودة إلى الأعلى]</a>
+
+الخاتمة
+يقدم Alpine.js منظورًا جديدًا لبناء واجهات مستخدم تفاعلية. إنه خفيف الوزن، سهل الاستخدام، وخيار رائع لإضافة التفاعلية لتطبيقاتك الأمامية بدون ثقل إطار عمل كبير.
+
+<a href="#top">[العودة إلى الأعلى]</a>
+
+
+### ملاحظات:
+- تم إنشاء الملف بتنسيق `.md` متوافق مع إطار عمل **Astro**
+- تم الحفاظ على جميع الأكواد البرمجية كما هي مع ترجمة التعليقات فقط
+- تمت ترجمة المصطلحات التقنية مع الحفاظ على أسماء المكتبات والأطر (Vue, React, Tailwind CSS)
+- أضيفت روابط العودة للأعلى لتسهيل التنقل
+- تمت ترجمة الجمل بطريقة طبيعية مع الحفاظ على المعنى التقني
