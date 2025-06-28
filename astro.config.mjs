@@ -105,12 +105,9 @@ sitemap({
 
       // Exclude paginated blog routes like /blog/2/
       /\/blog\/\d+/.test(page) 
-      // Exclude manually listed pages
-      excludedPages.includes(page);
-
-    return !exclude;
+      
   }
-});
+})
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
