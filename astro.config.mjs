@@ -71,7 +71,7 @@ export default defineConfig({
         page.includes('/tag/') ||
         page.includes('/category/') ||
         /\/blog\/\d+/.test(page) ||
-        /^\/(ar|it)(\/|$)/.test(page)
+        /^\/(ar|it)\/blog\/[^/]/
       );
     }
   })
