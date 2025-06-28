@@ -67,31 +67,24 @@ export default defineConfig({
     solidJs(),
 	sitemap({
   filter(page) {
-    // Convert to URL object for better parsing
     const url = new URL(page, 'https://tiktokioupdate.vercel.app');
     
-    // Exclusion conditions
+    // All non-English language codes
+    const nonEnglishLangs = ['ar', 'it', 'de', 'es', 'fr', 'hi', 'id', 'ko', 'ms', 'nl', 'pt', 'ru', 'tl', 'tr'];
+    
+    // Should exclude if:
     const shouldExclude = 
-      // Exclude all /ar/blog/ posts except the main /ar/blog page
-      (url.pathname.startsWith('/ar/blog/') && url.pathname !== '/ar/blog/') ||
-      
-      // Exclude all /it/blog/ posts except the main /it/blog page
-      (url.pathname.startsWith('/it/blog/') && url.pathname !== '/it/blog/') ||
-      
-      // Exclude paginated routes
+      // Non-English blog posts (but keeps /{lang}/blog/ index pages)
+      nonEnglishLangs.some(lang => 
+        url.pathname.startsWith(`/${lang}/blog/`) && 
+        url.pathname !== `/${lang}/blog/`
+      ) ||
+      // Pagination, tags, categories
       /\/blog\/\d+\//.test(url.pathname) ||
-      
-      // Exclude tag/category pages
       url.pathname.includes('/tag/') || 
       url.pathname.includes('/category/');
 
-    if (shouldExclude) {
-      console.log('🚫 Excluded from sitemap:', url.pathname);
-      return false;
-    }
-    
-    console.log('✅ Included in sitemap:', url.pathname);
-    return true;
+    return !shouldExclude;
   }
 })
   ],
