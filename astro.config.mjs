@@ -24,7 +24,7 @@ export default defineConfig({
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://tiktokio.cam",
+  site: "https://tiktokioupdate.vercel.app/",
   vite: {
     define: {
       __DATE__: `'${new Date().toISOString()}'`
