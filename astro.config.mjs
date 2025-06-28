@@ -66,15 +66,20 @@ export default defineConfig({
     icon(),
     solidJs(),
 	sitemap({
-    filter(page) {
-      return !(
-        page.includes('/tag/') ||
-        page.includes('/category/') ||
-        /\/blog\/\d+/.test(page) ||
-        /^\/(ar|it)\/blog\/[^/]/.test(page)
-      );
-    }
-  })
+  filter(page) {
+    return !(
+      // Exclude tag and category pages
+      page.includes('/tag/') ||
+      page.includes('/category/') ||
+
+      // Exclude paginated blog routes like /blog/2/
+      /\/blog\/\d+/.test(page) ||
+
+      // ✅ Exclude all Arabic & Italian BLOG POSTS (anything under /ar/blog/post-title)
+      /^\/(ar|it)\/blog\/[^/]/.test(page)
+    );
+  }
+})
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
