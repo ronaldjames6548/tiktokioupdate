@@ -9,88 +9,78 @@ import alpinejs from "@astrojs/alpinejs";
 import AstroPWA from "@vite-pwa/astro";
 import icon from "astro-icon";
 import solidJs from "@astrojs/solid-js";
-
 import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
-  output: 'server',
+  site: "https://tiktokioupdate.vercel.app/ ",
+  output: "hybrid",
   adapter: vercel({
     webAnalytics: {
       enabled: true,
     },
   }),
-});
-
-
-// https://astro.build/config
-export default defineConfig({
-  site: "https://tiktokioupdate.vercel.app/",
   vite: {
     define: {
       __DATE__: `'${new Date().toISOString()}'`
     }
   },
-  output: "hybrid",
   integrations: [
-    tailwind(), 
+    tailwind(),
+    astroI18next(),
+    alpinejs(),
+    AstroPWA({
+      mode: "production",
+      base: "/",
+      scope: "/",
+      includeAssets: ["favicon.ico"],
+      registerType: "autoUpdate",
+      manifest: {
+        name: "Tiktokio - TikTok Downloader - Download TikTok Videos Without Watermark",
+        short_name: "Tikokio",
+        theme_color: "#ffffff",
+        icons: [{
+          src: "pwa-192x192.webp",
+          sizes: "192x192",
+          type: "image/webp"
+        }, {
+          src: "pwa-512x512.webp",
+          sizes: "512x512",
+          type: "image/webp"
+        }, {
+          src: "pwa-512x512.webp",
+          sizes: "512x512",
+          type: "image/webp",
+          purpose: "any maskable"
+        }]
+      },
+      workbox: {
+        navigateFallback: "/404",
+        globPatterns: ["*.js"]
+      },
+      devOptions: {
+        enabled: false,
+        navigateFallbackAllowlist: [/^\/404$/],
+        suppressWarnings: true
+      }
+    }),
+    icon(),
+    solidJs(),
     sitemap({
-      filter: (page) => {
+      filter(page) {
+        // Exclude:
         return !(
           page.includes('/tag/') || 
           page.includes('/category/') ||
-         /\/blog\/\d+\/?$/.test(page) ||
-        /^\/(ar|de|es|fr|hi|id|it|ko|ms|nl|pt|ru|tl|tr)\/blog/.test(page)
+          /\/blog\/\d+/.test(page) || // e.g. /blog/2/
+          /^\/(ar|de|es|fr|hi|id|it|ko|ms|nl|pt|ru|tl|tr)(\/blog|$)/.test(page) // e.g. /ar/, /ar/blog/
         );
       }
-    }), 
-    astroI18next(), 
-    alpinejs(),                  
-    AstroPWA({
-    mode: "production",
-    base: "/",
-    scope: "/",
-    includeAssets: ["favicon.ico"],
-    registerType: "autoUpdate",
-    manifest: {
-      name: "Tiktokio - TikTok Downloader - Download TikTok Videos Without Watermark",
-      short_name: "Tikokio",
-      theme_color: "#ffffff",
-      icons: [{
-        src: "pwa-192x192.webp",
-        sizes: "192x192",
-        type: "image/webp"
-      }, {
-        src: "pwa-512x512.webp",
-        sizes: "512x512",
-        type: "image/webp"
-      }, {
-        src: "pwa-512x512.webp",
-        sizes: "512x512",
-        type: "image/webp",
-        purpose: "any maskable"
-      }]
-    },
-    workbox: {
-      navigateFallback: "/404",
-      globPatterns: ["*.js"]
-    },
-
-    
-
-    devOptions: {
-      enabled: false,
-      navigateFallbackAllowlist: [/^\/404$/],
-      suppressWarnings: true
-    }
-  }), icon(), solidJs()],
+    })
+  ],
   markdown: {
-    rehypePlugins: [rehypeSlug,
-    // This adds links to headings
-    [rehypeAutolinkHeadings, autolinkConfig]]
+    rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
   },
   experimental: {
     contentCollectionCache: true
-  },
-  
-  adapter: vercel()
+  }
 });
