@@ -107,9 +107,7 @@ sitemap({
       // Exclude paginated blog routes like /blog/2/
       /\/blog\/\d+/.test(page) ||
 
-      // Exclude manually listed pages
-      excludedPages.includes(page);
-
+     /^\/(ar|it)\/blog\//.test(page);
     return !exclude;
   }
 })
