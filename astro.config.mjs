@@ -75,8 +75,8 @@ export default defineConfig({
       // Exclude paginated blog routes like /blog/2/
       /\/blog\/\d+/.test(page) ||
 
-      // ✅ Exclude all Arabic & Italian BLOG POSTS (anything under /ar/blog/post-title)
-      /^\/(ar|it)\/blog\/[^/]/.test(page)
+      // ✅ Updated regex to match exact Arabic & Italian blog POSTS
+      /^\/(ar|it)\/blog\/[^/?#]+/.test(page)
     );
   }
 })
