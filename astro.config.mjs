@@ -65,16 +65,16 @@ export default defineConfig({
     }),
     icon(),
     solidJs(),
-    sitemap({
-      filter(page) {
-        // Exclude:
-        return !(
-          page.includes('/tag/') || 
-          page.includes('/category/') ||
-          /\/blog\/\d+/.test(page)
-        );
-      }
-    })
+	sitemap({
+    filter(page) {
+      return !(
+        page.includes('/tag/') ||
+        page.includes('/category/') ||
+        /\/blog\/\d+/.test(page) ||
+        /^\/(ar|it)(\/|$)/.test(page)
+      );
+    }
+  })
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
@@ -83,3 +83,4 @@ export default defineConfig({
     contentCollectionCache: true
   }
 });
+
