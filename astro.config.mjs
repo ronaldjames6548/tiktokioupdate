@@ -67,19 +67,19 @@ export default defineConfig({
     solidJs(),
 	sitemap({
   filter(page) {
-    return !(
-      // Exclude tag and category pages
+    const exclude =
       page.includes('/tag/') ||
       page.includes('/category/') ||
-
-      // Exclude paginated blog routes like /blog/2/
       /\/blog\/\d+/.test(page) ||
+      /^\/(ar|it)\/blog\/[^/]/.test(page);
 
-      // ✅ Updated regex to match exact Arabic & Italian blog POSTS
-      /^\/(ar|it)\/blog\/[^/?#]+/.test(page)
-    );
+    if (exclude) {
+      console.log("Excluded from sitemap:", page);
+    }
+
+    return !exclude;
   }
-})
+});
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
