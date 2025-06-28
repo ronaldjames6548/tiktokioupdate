@@ -38,7 +38,8 @@ export default defineConfig({
         return !(
           page.includes('/tag/') || 
           page.includes('/category/') ||
-          /\/blog\/\d+\/?$/.test(page)
+         /\/blog\/\d+\/?$/.test(page) ||
+        /^\/(ar|de|es|fr|hi|id|it|ko|ms|nl|pt|ru|tl|tr)\/blog/.test(page)
         );
       }
     }), 
