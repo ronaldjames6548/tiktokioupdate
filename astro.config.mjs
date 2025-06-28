@@ -12,7 +12,7 @@ import solidJs from "@astrojs/solid-js";
 import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
-  site: "https://tiktokioupdate.vercel.app/ ",
+  site: "https://tiktokioupdate.vercel.app/",
   output: "hybrid",
   adapter: vercel({
     webAnalytics: {
@@ -66,20 +66,16 @@ export default defineConfig({
     icon(),
     solidJs(),
 	sitemap({
-  filter(page) {
-    const exclude =
-      page.includes('/tag/') ||
-      page.includes('/category/') ||
-      /\/blog\/\d+/.test(page) ||
-      /^\/(ar|it)\/blog\/[^/]/.test(page);
+      filter(page) {
+        const exclude =
+          page.includes('/tag/') ||
+          page.includes('/category/') ||
+          /\/blog\/\d+/.test(page) ||
+          /^\/(ar|it)\/blog\/[^/]/.test(page);
 
-    if (exclude) {
-      console.log("Excluded from sitemap:", page);
-    },
-
-    return !exclude;
-  }
-});
+        return !exclude;
+      }
+    })
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
