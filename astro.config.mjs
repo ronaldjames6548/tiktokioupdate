@@ -22,8 +22,6 @@ export default defineConfig({
 });
 
 
-
-
 // https://astro.build/config
 export default defineConfig({
   site: "https://tiktokio.cam",
@@ -35,7 +33,15 @@ export default defineConfig({
   output: "hybrid",
   integrations: [
     tailwind(), 
-    sitemap(), 
+    sitemap({
+      filter: (page) => {
+        return !(
+          page.includes('/tag/') || 
+          page.includes('/category/') ||
+          /\/blog\/\d+\/?$/.test(page)
+        );
+      }
+    }), 
     astroI18next(), 
     alpinejs(),                  
     AstroPWA({
