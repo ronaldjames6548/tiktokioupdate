@@ -67,16 +67,16 @@ export default defineConfig({
     solidJs(),
 	sitemap({
   filter(page) {
-    const isEnglishBlog = page.startsWith('/blog/');
     const exclude =
       page.includes('/tag/') ||
       page.includes('/category/') ||
       /\/blog\/\d+/.test(page) ||
-      !page.startsWith('/blog/');
+      // Only exclude translated blog posts, not main English blog or other pages
+      /^\/(ar|de|es|fr|hi|id|it|ko|ms|nl|pt|ru|tl|tr)\/blog\//.test(page);
 
     return !exclude;
   }
-})
+});
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
