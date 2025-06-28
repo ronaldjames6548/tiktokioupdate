@@ -65,22 +65,34 @@ export default defineConfig({
     }),
     icon(),
     solidJs(),
-sitemap({
+	sitemap({
   filter(page) {
-    const exclude =
+    // List of patterns to exclude
+    const excludePatterns = [
       // Exclude tag/category pages
-      page.includes('/tag/') ||
-      page.includes('/category/') ||
+      /\/tag\//,
+      /\/category\//,
+      
+      // Exclude paginated blog routes
+      /\/blog\/\d+\//,
+      
+      // Exclude all non-English blog posts
+      /^\/(ar|it)\/blog\/.+/,
+      
+      // Specific URLs you want to exclude (add more as needed)
+      /\/best-entertainment-apps-that-must-be-in-your-bookmark-list\//,
+      
+    ];
 
-      // Exclude paginated blog routes like /blog/2/
-      /\/blog\/\d+/.test(page) ||
-
-      // ✅ Exclude all translated blog POSTS (e.g., /ar/blog/post-title/)
-      /^\/(ar|it)\/blog\//.test(page) && !/^\/(ar|it)\/blog\/$/.test(page);
-
-    console.log("Excluded:", exclude ? page : "(included)", exclude);
-
-    return !exclude;
+    // Check if current page matches any exclusion pattern
+    const shouldExclude = excludePatterns.some(pattern => pattern.test(page));
+    
+    if (shouldExclude) {
+      console.log("Excluded from sitemap:", page);
+      return false;
+    }
+    
+    return true;
   }
 })
   ],
