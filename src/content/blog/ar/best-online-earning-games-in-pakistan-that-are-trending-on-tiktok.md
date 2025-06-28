@@ -1,17 +1,15 @@
 ---
-title: أفضل ألعاب الربح عبر الإنترنت في باكستان التي تتصدر الترند على تيك توك
+title: "Iganony Instagram Anonymous Story Viewer Review: How to Use It"
 draft: false
-author: Jon Doe 
+author: "Jon Doe"
 tags:
-  - تطبيقات
-
+  - "Apps"
 image:
-  src: /images/earninggames.webp
-  alt: Online Earning Games
-snippet: Making money in this modern era is easy with the proper knowledge and skills.
-
-publishDate: 2025-02-09
-category: Tech
+  src: "/images/iganony.webp"
+  alt: "Iganony Anonymous Instagram Viewer"
+snippet: "Read our full review of Iganony, the trending anonymous Instagram story viewer, and learn how to use it."
+publishDate: "2025-06-28"
+category: "Social"
 ---
 
 
