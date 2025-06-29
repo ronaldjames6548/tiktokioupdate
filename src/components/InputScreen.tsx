@@ -75,7 +75,7 @@ function InputScreen({}: Props) {
   };
 
   return (
-    <div class="max-w-4xl mx-auto mt-8 px-4">
+    <div class="max-w-6xl mx-auto mt-8 px-4">
       <Toaster />
 
 {/* input data start */}
