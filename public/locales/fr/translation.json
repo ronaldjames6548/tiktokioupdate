@@ -1,8 +1,17 @@
 {
     "site": {
-        "title": "TikTokio - Téléchargeur TikTok - Télécharger des vidéos TikTok sans filigrane",
-        "description": "TikTokio est un téléchargeur de vidéos TikTok qui permet de télécharger facilement en ligne des vidéos TikTok sans filigrane, téléchargez des vidéos depuis TikTok et obtenez gratuitement les vidéos TikTok au format MP4."
-    },
+	"title": "TikTokio - Téléchargeur TikTok - Télécharger des Vidéos Sans Filigrane",
+	"description": "TikTokio - Téléchargeur TikTok pour télécharger facilement des vidéos TikTok en MP4 sans filigrane. Rapide, simple et compatible avec tous les appareils.",
+	"tvd_title": "TikTokio - Téléchargeur de Vidéos TikTok Gratuit Sans Filigrane",
+	"tvd_description": "Téléchargez des vidéos TikTok sans filigrane. Avec TikTokio, c’est gratuit et rapide en quelques secondes. Pas de connexion, pas d’appli. Sûr, simple et toujours gratuit !",
+	"tvd_keywords": "TikTokio, téléchargeur vidéo TikTok, télécharger vidéo TikTok, téléchargeur TikTok gratuit, sauvegarder vidéos TikTok, téléchargeur TikTok en ligne",
+	"td_title": "TikTokio - Téléchargeur TikTok - Vidéos Sans Filigrane",
+	"td_description": "Téléchargez gratuitement des vidéos TikTok en ligne avec TikTokio, un téléchargeur rapide et sécurisé. Sauvegardez en MP4 sans filigrane. Sans inscription, utilisez-le partout gratuitement.",
+	"td_keywords": "TikTokio, téléchargeur TikTok sans filigrane, sauvegarder vidéos TikTok en ligne, comment télécharger des vidéos TikTok, meilleur outil pour télécharger TikTok, site de téléchargement TikTok, application de téléchargement TikTok, sauvegarde gratuite de vidéos TikTok, télécharger TikTok MP4",
+	"dtv_title": "TikTokio - Télécharger des Vidéos TikTok Sans Filigrane Facilement",
+	"dtv_description": "Téléchargez facilement des vidéos TikTok sans filigrane avec TikTokio, un téléchargeur gratuit. Sauvegardez en MP4. Sans inscription, gratuit sur tous les appareils.",
+	"dtv_keywords": "TikTokio, télécharger vidéo TikTok sans filigrane, téléchargeur vidéo TikTok en ligne, téléchargeur TikTok gratuit, télécharger vidéos TikTok en ligne, sauvegarder vidéos TikTok sans filigrane"
+	},
     "hero": {
         "title": "TikTokio - Téléchargeur de Vidéos TikTok Gratuit",
         "subtitle": "Télécharger des vidéos TikTok en ligne - Téléchargeur sans filigrane",

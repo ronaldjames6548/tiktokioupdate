@@ -1,8 +1,17 @@
 {
   "site": {
-        "title": "TikTokio - TikTok Downloader - I-Download ang Mga Video sa TikTok nang Walang Watermark",
-        "description": "Ang TikTokio ay isang downloader ng video sa TikTok na nagpapahintulot sa iyo na madaling mag-download ng mga video sa TikTok online nang walang watermark, i-download ang video mula sa TikTok at libreng i-download ang TikTok video sa format na mp4."
-    },
+		"title": "TikTokio - TikTok Downloader - Mag-download ng TikTok Videos Nang Walang Watermark",
+		"description": "TikTokio - Tiktok downloader para makapag-download ng TikTok videos nang walang watermark sa MP4 format. Madali, mabilis, at gumagana sa kahit anong device",
+		"tvd_title": "TikTokio - Libreng Online TikTok Video Downloader Nang Walang Watermark",
+		"tvd_description": "Mag-download ng TikTok videos nang walang watermark. Libre at mabilis na pag-download gamit ang TikTokio sa ilang segundo. Walang login, walang app na kailangan. Ligtas, simple, at laging libre!",
+		"tvd_keywords": "TikTokio, TikTok video downloader, mag-download ng TikTok video, libreng TikTok downloader, i-save ang TikTok videos, TikTok downloader online",
+		"td_title": "TikTokio - TikTok Downloader - TikTok Video Downloader Nang Walang Watermark",
+		"td_description": "Mag-download ng TikTok videos nang libre gamit ang mabilis at secure na TikTokio. I-save ang mga video nang walang watermark sa MP4. Walang signup, magamit kahit saan.",
+		"td_keywords": "TikTokio, TikTok downloader nang walang watermark, i-save ang TikTok videos online, paano mag-download ng TikTok videos, pinakamahusay na TikTok downloader, TikTok downloader website, TikTok video downloader app, libreng TikTok video saver, mag-download ng TikTok MP4",
+		"dtv_title": "TikTokio - Mag-download ng TikTok Video Online Nang Walang Watermark",
+		"dtv_description": "Madaling mag-download ng TikTok videos nang walang watermark gamit ang libreng TikTok downloader na TikTokio. I-save ang TikTok video sa MP4 format. Walang sign-up, libreng download sa lahat ng device.",
+		"dtv_keywords": "TikTokio, mag-download ng TikTok video nang walang watermark, TikTok video downloader online, libreng TikTok downloader, mag-download ng TikTok videos online, i-save ang TikTok videos nang walang watermark"
+	},
     "hero": {
         "title": "TikTokio - Libreng TikTok Video Downloader",
         "subtitle": "I-Download ang Mga Video sa TikTok Online - Walang Watermark na TikTok Downloader",
