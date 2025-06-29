@@ -5,7 +5,7 @@ author: Jon Doe
 tags:
   - Apps
 image:
-  src: https://i.imgur.com/0k6ePWy.png
+  src: /images/0k6ePWy.webp
   alt: Capcut
 snippet: Download CapCut Mod APK v13.7.0 (Premium Unlocked) 2025. Edit videos like a pro with no ads, no watermark, and premium features for free.
 
@@ -14,7 +14,7 @@ category: Tech
 
 ---
 
-![img](https://i.imgur.com/0k6ePWy.png#center)
+![img](/images/0k6ePWy.webp#center)
 
 
 | App Name | [CapCut Mod APK](http://capckutapk.com) |

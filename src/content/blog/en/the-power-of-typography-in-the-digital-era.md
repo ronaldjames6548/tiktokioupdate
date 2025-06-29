@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/fontchanger.png
+  src: /fontchanger.webp
   alt: Tiktok
 snippet: TikTok 18 is a version of the popular TikTok app, designed for users who want fewer restrictions on content.
 
@@ -19,13 +19,14 @@ The power of typography in the digital era is something that often goes unnotice
 ## Typography Improve User Experience ##
 When you visit a website or read an article, the typography used affects your experience more than you might realize. Imagine coming across a page where the text is too small, crammed together, or in a font that’s difficult to read. You’d probably feel frustrated and leave the page without finishing the content. On the other hand, clear, well-designed text invites you to keep reading and makes the experience enjoyable. This is the subtle but powerful influence of typography.
 
-![img](https://tiktokio.cam/images/fontchanger.png)
+![img](/fontchanger.webp)
 
 ## Typography Guides Readers Through Content ##
 Typography helps guide readers through information effortlessly. Designers carefully select fonts, adjust line spacing, and structure content visually so it becomes easier for readers to find what they need and understand the message quickly. This thoughtful design approach is especially important in the digital world, where users often skim through content rather than reading every word. Proper headings, bullet points, and font hierarchy all play crucial roles.
 
 ## Typography Builds Personality and Brand Identity ##
 Beyond readability, typography plays a significant role in creating personality and setting the tone for a brand or website. Think about how a playful, handwritten-style font gives off a friendly and casual vibe, while a clean, minimalist font looks professional and modern. These font choices convey the identity of a brand and help make it memorable. Tech giants like Google and Apple demonstrate how consistent typography can become an integral part of their brand identity.
+**[Read the English version](/blog/the-power-and-potential-of-chatgpt "The Power and Potential of ChatGPT")**
 
 ## Emotional Influence of Typography ##
 Typography isn’t just about aesthetics—it can influence emotions. Different fonts can evoke feelings of happiness, curiosity, professionalism, or excitement. This emotional impact is why choosing the right font is critical in marketing. For instance, a call-to-action button that says "Buy Now" in a bold, confident font is more persuasive than the same text in a plain, generic font. Thoughtful typography can attract, persuade, and engage.

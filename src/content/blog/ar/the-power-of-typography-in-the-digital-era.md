@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/fontchanger.png
+  src: /images/fontchanger.webp
   alt: Tiktok
 snippet: TikTok 18 is a version of the popular TikTok app, designed for users who want fewer restrictions on content.
 
@@ -15,7 +15,7 @@ category: Tech
 
 ---
 
-![أداة تغيير الخطوط](https://tiktokio.cam/images/fontchanger.png "FontChanger - أداة لتغيير الخطوط")
+![أداة تغيير الخطوط](/images/fontchanger.webp "FontChanger - أداة لتغيير الخطوط")
 
 قوة الطباعة في العصر الرقمي هي شيء غالبًا ما يتم التغاضي عنه لكنه يلعب دورًا حاسمًا في تشكيل طريقة تفاعلنا مع المحتوى عبر الإنترنت. الطباعة ليست مجرد اختيار خط لجعل النص يبدو جميلاً؛ إنها تتعلق بخلق اتصال بين الرسالة والجمهور. طريقة ظهور النص على الشاشة يمكن أن تؤثر على كيفية إدراك الناس للمعلومات، واستجابتهم العاطفية، وحتى مقدار ثقتهم في المصدر.
 

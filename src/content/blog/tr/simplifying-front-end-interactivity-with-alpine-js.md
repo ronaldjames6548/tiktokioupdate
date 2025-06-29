@@ -6,7 +6,7 @@ tags:
   - Apps
  
 image:
-  src: /images/alpinjs.png
+  src: /images/alpinjs.webp
   alt: Alpine.js
 snippet: Alpine.js is a lightweight JavaScript framework for building
   interactive front-end components with simplicity and flexibility.

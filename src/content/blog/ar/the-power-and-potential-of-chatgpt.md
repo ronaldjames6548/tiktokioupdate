@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: /images/chat-gpt.png
+  src: /images/chat-gpt.webp
   alt: chatgpt
 snippet: Unveiling the world of advanced AI with ChatGPT, a sophisticated
   chatbot that uses machine learning to generate human-like text. Discover its

@@ -21,9 +21,9 @@ Downloading TikTok videos through TikTokio or more TikTok downloaders is importa
 
 ## Preview
 
-![Alt text](.github/images/pagespeed-small.png)
+![Alt text](.github/images/pagespeed-small.webp)
 
-![Astros Preview](.github/images/astros-preview.png)
+![Astros Preview](.github/images/astros-preview.webp)
 
 ## 🧪 Test
 
@@ -45,7 +45,7 @@ You can leave build settings as defaults.
 <details>
 <summary>Cloudflare configuration</summary>
 
-![Alt text](.github/images/image.png)
+![Alt text](.github/images/image.webp)
 
 </details>
 
