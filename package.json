@@ -59,9 +59,12 @@
     "sharp": "^0.33.3",
     "workbox-window": "^7.0.0"
   },
+  {
   "engines": {
-  "node": ">=20.0.0"
-},
+    "node": ">=20.0.0",
+    "npm": ">=9.0.0"
+  }
+}
   "resolutions": {
     "undici": "5.28.3"
   },
