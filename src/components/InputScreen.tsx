@@ -81,7 +81,7 @@ function InputScreen({}: Props) {
 {/* input data start */}
 <div class="max-w-6xl mx-auto">
     <div class="download-box rounded-2xl">
-        <div class="bg-gray-800/80 rounded-xl backdrop-blur-md p-4">
+        <div class="bg-cyan-800/80 rounded-xl backdrop-blur-md p-4">
             <form class="flex flex-col md:flex-row items-stretch md:items-center gap-2"
               onSubmit={(e) => {
               e.preventDefault();
