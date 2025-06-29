@@ -7,31 +7,43 @@ import Layout from "@layouts/Layout.astro";
 import { t } from "i18next";
 
 export async function getStaticPaths() {
-  const posts = await getCollection("blog", ({ data }) => 
-    !data.draft && data.publishDate < new Date()
-  );
-  
-  const languages = "en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"];
-
-  return languages.flatMap(lang => {
-    const langPosts = posts.filter(post => post.slug.startsWith(`${lang}/`));
-    const tags = new Set();
+  try {
+    const posts = await getCollection("blog", ({ data }) => 
+      !data.draft && data.publishDate < new Date()
+    );
     
-    langPosts.forEach(post => {
-      post.data.tags?.forEach(tag => tags.add(tag.toLowerCase()));
-    });
+    const languages = ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"];
+    const paths = [];
 
-    return Array.from(tags).map(tag => ({
-      params: { tag, lang },
-      props: {
-        posts: langPosts.filter(post => 
-          post.data.tags?.some(t => t.toLowerCase() === tag)
-        ),
-        tag,
-        lang
+    for (const lang of languages) {
+      const langPosts = posts.filter(post => post.slug.startsWith(`${lang}/`));
+      const tags = new Set();
+      
+      for (const post of langPosts) {
+        if (post.data.tags) {
+          post.data.tags.forEach(tag => tags.add(tag.toLowerCase()));
+        }
       }
-    }));
-  });
+
+      for (const tag of Array.from(tags)) {
+        paths.push({
+          params: { tag, lang },
+          props: {
+            posts: langPosts.filter(post => 
+              post.data.tags?.some(t => t.toLowerCase() === tag)
+            ),
+            tag,
+            lang
+          }
+        });
+      }
+    }
+
+    return paths;
+  } catch (error) {
+    console.error("Error in getStaticPaths:", error);
+    return [];
+  }
 }
 
 const { posts = [], tag, lang } = Astro.props;
