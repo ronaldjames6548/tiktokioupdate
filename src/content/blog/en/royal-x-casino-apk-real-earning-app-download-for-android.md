@@ -155,6 +155,8 @@ Get additional rewards by joining the official Telegram channel.
 
 Royal x Casino has brought a revolution in online casino gaming. This platform not only provides entertainment but also gives users the opportunity to earn real money. Features like secure payment methods, daily rewards, and live casino have made this platform the first choice of players. Whether you are an experienced player or a newbie, Royal x Casino is the perfect choice for you.
 
+**[Read the English version](/blog/royal-x-casino-apk-real-earning-app-download-for-android/ "Royal X Casino Apk (Real Earning App) Download for Android")**
+
 ### **Frequently Asked Questions**
 
 **How to log in to Royal x Casino?**  

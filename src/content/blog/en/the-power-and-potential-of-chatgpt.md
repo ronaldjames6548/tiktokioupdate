@@ -38,6 +38,9 @@ Like any AI, ChatGPT isn't perfect. It sometimes writes incorrect or nonsensical
 
 OpenAI has established strong guidelines and feedback mechanisms to minimize these issues. They are dedicated to improving ChatGPT over time, addressing its limitations, and refining its ability to reject inappropriate requests.
 
+**[Read the English version](/blog/the-power-and-potential-of-chatgpt "The Power and Potential of ChatGPT")**
+
+
 ## The Future of ChatGPT
 
 ChatGPT's potential is significant. As AI technology continues to evolve, we can expect further improvements in its capabilities and effectiveness. OpenAI's vision is to ensure that artificial general intelligence (AGI) benefits all of humanity. ChatGPT is a step in that direction.

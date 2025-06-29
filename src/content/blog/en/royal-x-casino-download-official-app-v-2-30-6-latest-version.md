@@ -47,6 +47,8 @@ Open the Royal X app and click Register. Fill in the required details such as us
 Playing in RoyalXCasino is straightforward and easy in Pakistan. So first, download the app and install it on your apparatus. The next step is to register an account using your credentials. You can now try checking out what the app has regarding various casino games.
 To deposit an advance payment through JazzCash, Easypaisa or bank transfer, go for the game slots, poker, roulette etc. Play the game as per rules and place wise bets for winnings, which can be cashed out quickly and securely.
 
+**[Read the English version](/blog/royal-x-casino-download-official-app-v-2-30-6-latest-version/ "Royal x Casino - Download Official App  (v2.30.6) Latest Version")**
+
 ## Royal Casino X Games and Features ##
 At RoyalXCasino, a whole plethora of electronic games are there to grapple with. One will play slots, poker, roulette and blackjack. These games come with stunning graphics and flawless technical performance. The player can enjoy and try their luck at winning mommy prizes any hour of the day.
 The casino boasts of many features that come handy for the players. It offers a payment system that can be safely used for fast withdrawals. Another online facility feature it possesses is live dealer games making it feel like a real casino. Lucky players residing in Pakistan are bound to have a safe and fun experience playing their favorite games on this beautiful site.

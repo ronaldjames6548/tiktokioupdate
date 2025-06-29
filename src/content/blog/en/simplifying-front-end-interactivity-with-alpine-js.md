@@ -55,4 +55,7 @@ Alpine.js provides you with a set of directives that you can use within your HTM
 
 In this example, when the button is clicked, the `open` data attribute is toggled, which in turn toggles the visibility of the div below it.
 
+**[Read the English version](/blog/simplifying-front-end-interactivity-with-alpine-js "Simplifying Front-End Interactivity with Alpine.js")**
+
+
 Alpine.js brings a refreshing perspective to building interactive user interfaces. It's lightweight, straightforward, and a great choice for adding interactivity to your front-end applications without the weight of a larger framework.
