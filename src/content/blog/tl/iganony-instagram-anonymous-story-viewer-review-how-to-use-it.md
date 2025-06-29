@@ -6,7 +6,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/iganony.webp
+  src: /images/iganony.webp
   alt: IgAnony
 snippet: IgAnony is a web-based application that allows users to view Instagram stories, photos and videos without logging into an Instagram account or revealing their identity.
 
@@ -18,7 +18,7 @@ category: Tech
 In today’s digital world, privacy is a growing concern for social media users. Many people want to engage with content anonymously, whether for personal reasons or just curiosity. **IgAnony** is one of the most popular tools that allows users to view and download Instagram stories without revealing their identity. Alongside platforms like **TikTokio.cam**, which offers similar features for TikTok users, IgAnony provides a seamless experience for those looking to maintain discretion while browsing social media.
 ## What is IgAnony? ##
 IgAnony is a web-based application that allows users to view Instagram stories, photos and videos without logging into an Instagram account or revealing their identity. By entering the username of a public Instagram account, users can access and even download the account's content anonymously.
-![img](https://tiktokio.cam/images/iganony.webp)
+![img](/images/iganony.webp)
 ## Key Features of IgAnony: ##
 1. **Anonymity:** Users can browse and download Instagram content without notifying the content creator, ensuring complete privacy.
 2. **No Account Required:** There's no need to log in or provide personal information, enhancing user security.

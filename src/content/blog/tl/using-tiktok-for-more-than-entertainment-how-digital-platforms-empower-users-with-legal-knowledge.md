@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/lex.webp
+  src: /images/lex.webp
   alt: KK222
 snippet: Alimony in Pakistan is legally recognized. Social media platforms share insights on financial rights, but professional legal advice is recommended for specific cases.
 
@@ -17,7 +17,7 @@ category: Tech
 
 The digital age has revolutionized the way people consume information. While social media platforms like TikTok were initially created for entertainment, they have evolved into powerful tools for education and awareness. However, many users, particularly overseas Pakistanis, struggle to access reliable legal information. Misinformation spreads quickly, leaving individuals confused about important matters like family law, financial rights, and legal procedures. 
 Thankfully, digital platforms now offer a way to bridge this knowledge gap. TikTok and other social media channels provide easy access to legal insights through short, engaging videos. Legal experts and content creators use these platforms to break down complex topics, helping people understand their rights, including crucial subjects like the Family law, including [**divorce procedure for overseas Pakistani**](https://lex.com.pk/family-law/divorce-procedure-for-overseas-pakistanis/).
-![Alimony](https://tiktokio.cam/images/lex.webp "Alimony")
+![Alimony](/images/lex.webp "Alimony")
 
 ## The Rise of Legal Awareness on TikTok ##
 ### How Social Media is Changing Legal Education ###
