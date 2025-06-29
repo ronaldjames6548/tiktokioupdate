@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/royxcasino.webp
+  src: /images/royxcasino.webp
   alt: Manok Na Pula
 snippet: Royal X Casino offers an exciting gaming experience with slots, poker, and live dealer games. 
 
@@ -15,7 +15,7 @@ category: Tech
 
 ---
 
-![رويال إكس كازينو](https://tiktokio.cam/images/royxcasino.webp "واجهة رويال إكس كازينو")
+![رويال إكس كازينو](/images/royxcasino.webp "واجهة رويال إكس كازينو")
 
 رويال إكس كازينو هو منصة ألعاب إنترنت للاعبين المهتمين بأنواع مختلفة من ألعاب الكازينو مثل السلوتس، البوكر، الروليت والبلاك جاك. يتميز الموقع بتجربة لعب آمنة وواجهة سهلة الاستخدام، مما يجعله خيارًا مثاليًا للمبتدئين واللاعبين المحترفين.
 

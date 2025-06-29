@@ -7,7 +7,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/slidesharedownloader.webp
+  src: /images/slidesharedownloader.webp
   alt: SlideShare
 snippet: Download SlideShare PPT Slides | SlideShare PDF Presentations | Easy SlideShare Downloader Without Login
 
@@ -22,7 +22,7 @@ SlideShare هي منصة شهيرة لمشاركة وعرض العروض الت�
 
 ولكن، للأسف لا تسمح SlideShare بتحميل العروض بسهولة، بل تحتاج إلى تسجيل الدخول. وهنا تأتي أهمية أداة **تحميل SlideShare**. إنها أداة مجانية عبر الإنترنت تساعدك على تحميل العروض التقديمية والمستندات بسهولة دون الحاجة لتسجيل الدخول.
 
-![SlideShare Downloader](https://tiktokio.cam/images/slideshare.webp "SlideShare Downloader")
+![SlideShare Downloader](/images/slideshare.webp "SlideShare Downloader")
 
 ---
 
@@ -55,7 +55,7 @@ SlideShare هي منصة شهيرة لمشاركة وعرض العروض الت�
 ### **3. اختيار صيغة التحميل: PDF أو PPT**
 ستظهر لك خيارات لتحميل العرض بصيغة PDF أو PPT. اختر الصيغة التي تناسبك، واضغط "تحميل".
 
-![شرح التحميل](https://tiktokio.cam/images/how-to-download.webp "SlideShare Downloader")
+![شرح التحميل](/images/how-to-download.webp "SlideShare Downloader")
 
 ---
 

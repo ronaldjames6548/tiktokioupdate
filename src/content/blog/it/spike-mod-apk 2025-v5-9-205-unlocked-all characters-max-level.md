@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/gameimage.webp
+  src: /images/gameimage.webp
   alt: Spike MOD
 snippet: The Spike is a total game-changer for volleyball lovers! This exciting volleyball game would take your skills to the next level! It is a place where you compete with your opponents, which will help you to stay focused and build confidence. 
 
@@ -20,7 +20,7 @@ category: Tech
 **Spike Volleyball Boom Jump** porta l'emozione del volley direttamente sul tuo schermo. Con grafica realistica e controlli fluidi, ti sentirai come se stessi giocando una partita vera. Il gioco ti permette di vivere l’adrenalina della competizione e goderti l’azione veloce del volley.
 Questa versione modificata del gioco del volley ha tutte le funzioni che desideri. Che tu sia un giocatore esperto o che giochi solo per divertimento, il nostro gioco è perfetto. Ti piacerà così tanto che vorrai tornare a giocarci sempre.
 
-![Immagine di Spike Volleyball](https://tiktokio.cam/images/gameimage.webp )
+![Immagine di Spike Volleyball](/images/gameimage.webp )
 
 ---
 
@@ -50,7 +50,7 @@ Spike Volleyball ha effetti sonori coinvolgenti. La colonna sonora è dinamica e
 ### **Nessuna pubblicità: Azione di volley senza interruzioni**
 Questa versione modificata è priva di pubblicità. Senza annunci, puoi concentrarti completamente sul gioco senza distrazioni. Goditi il gioco senza alcun disturbo.
 
-![Valutazione di Spike](https://tiktokio.cam/images/spikerating.webp )
+![Valutazione di Spike](/images/spikerating.webp )
 
 ---
 

@@ -7,7 +7,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/tiktok-account.webp
+  src: /images/tiktok-account.webp
   alt: Manok Na Pula
 snippet: To build a powerful presence on TikTok from scratch, you need to post engaging videos consistently and wait for their success. 
 

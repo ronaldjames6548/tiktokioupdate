@@ -6,7 +6,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/jennyminecraft.webp
+  src: /images/jennyminecraft.webp
   alt: Tiktok
 snippet: TikTok 18 is a version of the popular TikTok app, designed for users who want fewer restrictions on content.
 
@@ -21,7 +21,7 @@ Minecraft has a vast modding community that constantly creates new content, addi
 Jenny Mod is a popular mod for Minecraft that introduces a companion named Jenny. Unlike traditional NPCs (Non-Playable Characters) in the game, Jenny is designed to be interactive, providing a unique experience for players who install the mod. The mod includes special animations, abilities, and interactions, making Jenny a distinctive addition to the Minecraft world.
 Developed primarily for the **Java Edition** of Minecraft, Jenny Mod has gained significant attention for its unconventional features. While the mod has been a subject of controversy, it remains a favorite among certain players who enjoy modding their game for added variety.
 
-![img](https://tiktokio.cam/images/jennyminecraft.webp)
+![img](/images/jennyminecraft.webp)
 
 ## Features of Jenny Mod ##
 Jenny Mod is more than just a character addition. Some of its features include:

@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/gameimage.webp
+  src: /images/gameimage.webp
   alt: Spike MOD
 snippet: The Spike is a total game-changer for volleyball lovers! This exciting volleyball game would take your skills to the next level! It is a place where you compete with your opponents, which will help you to stay focused and build confidence. 
 
@@ -17,7 +17,7 @@ category: Tech
 
 Do you want to play exciting gameplay on your Android device? The Spike volleyball boom Jump brings the excitement of volleyball to your fingertips. With real-life graphics and smooth controls, you will feel like playing a live match. The game lets you experience the thrill of competition and enjoy the fast-paced action of volleyball.
 This volleyball mod game has all the exciting features you want. Whether you are a serious player or just playing for fun, our game is perfect. You will live playing it so much that you will want to come back and play again and again.
-![img](https://tiktokio.cam/images/gameimage.webp)
+![img](/images/gameimage.webp)
 
 
 ## **Features of the Spike Volleyball Story Mod**
@@ -43,7 +43,7 @@ Spike Volleyball's story has sound effects. The soundtrack is fast-paced and exc
 
 ### **No Ads: Uninterrupted Volleyball Action**
 This mod version has ads free. With no Ads, focus on your game without distraction. Enjoy this game without any disturbance.
-![img](https://tiktokio.cam/images/spikerating.webp)
+![img](/images/spikerating.webp)
 
 ## **Tips and Tricks to Conquer Spike Volleyball**
 

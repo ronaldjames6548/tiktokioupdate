@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/earninggames.webp
+  src: /images/earninggames.webp
   alt: Online Earning Games
 snippet: Making money in this modern era is easy with the proper knowledge and skills.
 
@@ -17,7 +17,7 @@ category: Tech
 
 في هذا العصر الرقمي السريع، أصبحت وسائل التواصل الاجتماعي وتطبيقات الرسائل ومنصات البث الترفيهي جزءاً لا يتجزأ من حياتنا اليومية. سواء كنت ترغب في التواصل مع الأصدقاء، مشاهدة الأفلام، أو تحميل فيديوهات TikTok، فإن امتلاك التطبيقات الصحيحة سيحدث فرقًا كبيرًا.
 
-![ألعاب الربح من الإنترنت](https://tiktokio.cam/images/earninggames.webp "Online Earning Games")
+![ألعاب الربح من الإنترنت](/images/earninggames.webp "Online Earning Games")
 
 ربح المال في هذا العصر الحديث أصبح ممكنًا وسهلاً إذا امتلكت المهارة والمعرفة الكافية. ومع ذلك، يعاني الكثير من الناس في إيجاد الفرص المناسبة لعدم معرفتهم بالطرق الفعالة للربح عبر الإنترنت. في هذا المقال، نستعرض بعض التطبيقات والألعاب الشهيرة في باكستان التي تتيح لك ربح المال فقط من خلال اللعب.
 

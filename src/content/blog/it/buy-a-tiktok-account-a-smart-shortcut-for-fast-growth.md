@@ -7,7 +7,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/tiktok-account.webp
+  src: /images/tiktok-account.webp
   alt: Manok Na Pula
 snippet: To build a powerful presence on TikTok from scratch, you need to post engaging videos consistently and wait for their success. 
 
@@ -20,7 +20,7 @@ Costruire una presenza forte su TikTok da zero richiede la pubblicazione costant
 **Quindi, qual è la soluzione?**  
 Esiste un modo intelligente e semplice per superare queste difficoltà: acquistare account TikTok già sviluppati con buoni follower e interazioni. In questo articolo, parleremo del perché convenga comprare account già cresciuti, dei vantaggi che offrono e di come fare tutto in modo sicuro. Iniziamo subito.
 
-![img](https://tiktokio.cam/images/tiktok-account.webp)
+![img](/images/tiktok-account.webp)
 
 ## Perché Comprare un Account TikTok? ##
 

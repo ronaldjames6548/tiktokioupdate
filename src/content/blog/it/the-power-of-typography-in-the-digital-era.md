@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/fontchanger.webp
+  src: /images/fontchanger.webp
   alt: Tiktok
 snippet: TikTok 18 is a version of the popular TikTok app, designed for users who want fewer restrictions on content.
 
@@ -21,7 +21,7 @@ Il potere della tipografia nell’era digitale è qualcosa che spesso passa inos
 
 Quando visiti un sito web o leggi un articolo, la tipografia utilizzata influenza la tua esperienza molto più di quanto tu possa immaginare. Immagina di imbatterti in una pagina dove il testo è troppo piccolo, affollato o scritto con un font difficile da leggere. Probabilmente ti sentirai frustrato e abbandonerai la pagina senza finire di leggere il contenuto. Al contrario, un testo chiaro e ben progettato ti invita a continuare la lettura e rende l’esperienza piacevole. Questa è l’influenza sottile ma potente della tipografia.
 
-![img](https://tiktokio.cam/images/fontchanger.webp )
+![img](/images/fontchanger.webp )
 
 ## La tipografia guida i lettori attraverso i contenuti ##
 

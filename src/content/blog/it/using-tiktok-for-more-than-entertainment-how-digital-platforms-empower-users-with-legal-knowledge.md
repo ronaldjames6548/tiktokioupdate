@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/lex.webp
+  src: /images/lex.webp
   alt: KK222
 snippet: Alimony in Pakistan is legally recognized. Social media platforms share insights on financial rights, but professional legal advice is recommended for specific cases.
 
@@ -20,7 +20,7 @@ L’era digitale ha rivoluzionato il modo in cui le persone consumano informazio
 
 Fortunatamente, le piattaforme digitali offrono oggi un modo per colmare questa lacuna informativa. TikTok e altri canali social permettono di accedere facilmente a spunti legali attraverso video brevi e coinvolgenti. Esperti legali e creator utilizzano queste piattaforme per semplificare argomenti complessi, aiutando le persone a comprendere i propri diritti, tra cui temi cruciali come il diritto di famiglia, incluso la [**procedura per il divorzio per pakistani all’estero**](https://lex.com.pk/family-law/divorce-procedure-for-overseas-pakistanis/ ).
 
-![Alimentazione](https://tiktokio.cam/images/lex.webp  "Alimentazione")
+![Alimentazione](/images/lex.webp  "Alimentazione")
 
 ## La crescita della consapevolezza legale su TikTok
 

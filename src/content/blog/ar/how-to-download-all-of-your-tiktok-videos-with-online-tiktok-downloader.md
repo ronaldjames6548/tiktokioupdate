@@ -6,7 +6,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/tiktok-downloader-tiktokio.webp
+  src: /images/tiktok-downloader-tiktokio.webp
   alt: How to download all of your Tiktok videos with online Tiktok downloader
 snippet: In the world of social media marketing, a new player is making a
   significant impact TikTok. This guide explores the potential of TikTok ads and
@@ -23,7 +23,7 @@ category: Tech
 أصبح TikTok قوة كبيرة في الولايات المتحدة، سواء في الترفيه أو التعليم أو الأخبار أو حتى مصدر دخل.  
 لكن ما سيحدث لكل مقاطع الفيديو بعد تنفيذ الحظر لا يزال غير واضح.
 
-![Tiktokio - أداة تنزيل TikTok](https://tiktokio.cam/images/tiktok-downloader-tiktokio.webp "Tiktokio - كيفية تنزيل فيديوهات TikTok")
+![Tiktokio - أداة تنزيل TikTok](/images/tiktok-downloader-tiktokio.webp "Tiktokio - كيفية تنزيل فيديوهات TikTok")
 
 ## كيفية تنزيل فيديوهات TikTok على الهاتف
 

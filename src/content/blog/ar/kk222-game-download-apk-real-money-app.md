@@ -6,7 +6,7 @@ tags:
   - Apps
     
 image:
-  src: https://tiktokio.cam/images/kk22.webp
+  src: /images/kk22.webp
   alt: KK222
 snippet: An entertainment-mobile gaming app for users possibly featuring a range of gaming options for earning is the KK222 Game.
 
@@ -19,7 +19,7 @@ category: Tech
 
 يُعد تطبيق **KK222 Game** واحدًا من أكثر التطبيقات جذبًا في الوقت الحالي لعشاق الألعاب الذين يبحثون عن الترفيه والفرص لربح المال الحقيقي. سواء كنت مستخدمًا لنظام Android أو iOS، فإن تنزيل وتثبيت التطبيق سهل للغاية، وهو يقدم مجموعة متنوعة من الألعاب المصغرة التي تمنحك الفرصة لكسب النقاط القابلة للتحويل إلى نقود حقيقية. إذا كنت تبحث عن طريقة ممتعة لكسب بعض الدخل الإضافي، فـ KK222 هو الخيار الأمثل.
 
-![KK222 Game](https://tiktokio.cam/images/kk22.webp )
+![KK222 Game](/images/kk22.webp )
 
 ## نظرة عامة على لعبة KK222
 

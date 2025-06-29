@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/royal.webp
+  src: /images/royal.webp
   alt: Capcut
 snippet: Royal x Casino is an online casino game that has brought together players from all over Pakistan on a single platform.
 
@@ -49,7 +49,7 @@ category: Tech
 
 Royal x Casino هي منصة كازينو عبر الإنترنت ثورية تجمع بين الألعاب الكلاسيكية والحديثة. توفر هذه المنصة للمستخدمين فرصة ربح المال الحقيقي. يمكنك هنا اللعب بألعاب تقليدية مثل البوكر والروليت، وكذلك ألعاب حديثة مثل ماكينات القمار والألعاب الإلكترونية. يضمن Royal x Casino خصوصية المستخدم وتجربة لعب سهلة، مما يجعلها الخيار الأول للاعبين حول العالم.
 
-![Royal x Casino](https://tiktokio.cam/images/royal.webp )
+![Royal x Casino](/images/royal.webp )
 
 ## ميزات Royal x Casino المثيرة
 

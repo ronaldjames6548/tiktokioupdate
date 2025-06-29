@@ -6,7 +6,7 @@ tags:
   - Apps
  
 image:
-  src: https://tiktokio.cam/images/minecraftapk.webp
+  src: /images/minecraftapk.webp
   alt: Minecraft
 snippet: Minecraft is one of the most popular sandbox video games of all time, developed by Mojang Studios and released in 2011.
 
@@ -17,7 +17,7 @@ category: Tech
 
 Minecraft is one of the most popular sandbox video games of all time, developed by Mojang Studios and released in 2011. The game allows players to explore, build, and survive in a block-based world that can be modified in nearly limitless ways. With its open-ended gameplay, Minecraft has captivated millions of players worldwide. Whether you’re a beginner or an experienced player, learning how to become a pro can significantly enhance your gaming experience.
 
-![img](https://tiktokio.cam/images/minecraftapk.webp)
+![img](/images/minecraftapk.webp)
 
 ## Understanding Minecraft ##
 Minecraft is available in multiple game modes, each offering a different experience:

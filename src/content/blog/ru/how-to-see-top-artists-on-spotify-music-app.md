@@ -5,7 +5,7 @@ author: Jon Doe
 tags:
   - Apps
 image:
-  src: https://tiktokio.cam/images/spotify-premium-apk.webp
+  src: /images/spotify-premium-apk.webp
   alt: spotify premium apk
 snippet: Spotify Premium APK, a music app, has amazed the world with its phenomenal features. Download the latest version of Spotify premium mod to enhance your music taste. 
 
@@ -20,7 +20,7 @@ So, from the day I downloaded Spotify on my mobile devices, I used to enjoy all 
 
 To kill my curiosity and know which artist unknowingly became my favorite, I searched for ways to find my favorite artist on Spotify. Basically, Spotify decides your top artist by analyzing the stats of your Spotify music listening.
 
-<p style="text-align: center"><img src="https://tiktokio.cam/images/spotify-premium-apk.webp"></p>
+<p style="text-align: center"><img src="/images/spotify-premium-apk.webp" alt="spotify-premium"></p>
 
 *Let's explore what I find in my search to see my favorite top artist and how you can check yours.*
 

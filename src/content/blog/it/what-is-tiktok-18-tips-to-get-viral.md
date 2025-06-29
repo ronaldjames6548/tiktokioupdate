@@ -6,7 +6,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/viral-tiktok.webp
+  src: /images/viral-tiktok.webp
   alt: Tiktok
 snippet: TikTok 18 is a version of the popular TikTok app, designed for users who want fewer restrictions on content.
 
@@ -17,7 +17,7 @@ category: Tech
 TikTok 18 è una versione della popolare app TikTok, progettata per gli utenti che desiderano meno restrizioni sui contenuti. Mentre l'app TikTok standard segue rigide linee guida della community per garantire un ambiente adatto alle famiglie, TikTok 18 consente agli utenti di condividere e visualizzare contenuti più adatti ai più grandi senza incorrere in divieti o restrizioni.
 Se vuoi diventare virale su TikTok 18+, devi comprenderne l'algoritmo, le preferenze di contenuto e le strategie di coinvolgimento. Questo articolo ti guiderà su come massimizzare la tua portata e aumentare le tue possibilità di diventare virale.
 
-![immagine](https://tiktokio.cam/images/viral-tiktok.webp)
+![immagine](/images/viral-tiktok.webp)
 
 ## Cos'è TikTok 18? ##
 TikTok 18 è una versione modificata di TikTok rivolta a un pubblico adulto. A differenza del TikTok originale, questa versione consente agli utenti di esplorare contenuti che potrebbero non essere conformi alle policy standard di TikTok. Non è disponibile sugli app store ufficiali come Google Play o l'App Store di Apple, il che significa che gli utenti devono scaricarla da fonti terze.

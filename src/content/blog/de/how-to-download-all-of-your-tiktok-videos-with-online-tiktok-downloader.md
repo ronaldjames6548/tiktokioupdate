@@ -6,7 +6,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/tiktok-downloader-tiktokio.webp
+  src: /images/tiktok-downloader-tiktokio.webp
   alt: How to download all of your Tiktok videos with online Tiktok downloader
 snippet: In the world of social media marketing, a new player is making a
   significant impact TikTok. This guide explores the potential of TikTok ads and
@@ -19,7 +19,7 @@ category: Tech
 Things are coming down to the wire for TikTok in the US. If you avoided TikTok or any news surrounding one of the most popular social media apps, you may not know that it is on the verge of being banned and shut down on January 19th.  
 That's this Sunday. The app has become a major force in the United States in many ways, from entertainment to education and news to income. But what will happen to all the videos after the ban goes into effect is still unclear.  
 
-![Tiktokio-Tiktok Downlaoder](https://tiktokio.cam/images/tiktok-downloader-tiktokio.webp "Tiktokio - How to download tiktok video")
+![Tiktokio-Tiktok Downlaoder](/images/tiktok-downloader-tiktokio.webp "Tiktokio - How to download tiktok video")
 
 
 While you can't save the entire TikTok video catalog for perusing after the shutdown, you can save your videos from being left in the void of the internet. This is a great idea if you haven't saved your uploads to your computer or one of the highly-rated cloud storage services like Google Drive. There are a couple of ways to save your videos, depending on whether you use your mobile device or a computer. The process is straightforward and preserves your digital gold post- TikTok shutdown.

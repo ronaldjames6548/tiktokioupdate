@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/earninggames.webp
+  src: /images/earninggames.webp
   alt: Online Earning Games
 snippet: Making money in this modern era is easy with the proper knowledge and skills.
 
@@ -16,7 +16,7 @@ category: Tech
 ---
 
 If you use TikTok, you've probably seen videos where people share tips and tricks on making money online. It's true—there are many ways to earn using just your smartphone and the internet. In this article, we'll introduce some trending apps and games in Pakistan that let you make money simply by playing. We will share some essential and trusted platforms with valuable tips about their usage and how you can grab them.
-![Online Earning Games](https://tiktokio.cam/images/earninggames.webp "Online Earning Games")
+![Online Earning Games](/images/earninggames.webp "Online Earning Games")
 Making money in this modern era is easy with the proper knowledge and skills. However, many people struggle to find opportunities because they are unaware of the best ways to earn online. Below, we will share some popular platforms where you can create an account, invest a small amount, and earn big rewards by playing smartly.  
 ​​## Top Trending Online Earning Games in Pakistan ​​##
 With the rise of technology, many people in Pakistan seek ways to earn money online. Playing games is one of the easiest and most entertaining ways to do this. Several platforms now allow users to play and earn actual cash rewards. If you're interested in making money while having fun, here are some of the best online earning games trending in Pakistan.

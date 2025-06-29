@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/gameimage.webp
+  src: /images/gameimage.webp
   alt: Spike MOD
 snippet: The Spike is a total game-changer for volleyball lovers! This exciting volleyball game would take your skills to the next level! It is a place where you compete with your opponents, which will help you to stay focused and build confidence. 
 
@@ -19,7 +19,7 @@ category: Tech
 
 هل تحب الألعاب المثيرة والمليئة بالحركة؟ إليك **Spike Volleyball Boom Jump**، اللعبة التي تحمل لك إثارة رياضة الطائرة إلى شاشة هاتفك. مع رسومات واقعية وتحكم سلس، ست感觉自己 وكأنك تلعب مباراة حقيقية. يمكنك هنا تجربة الإثارة التنافسية والاستمتاع بسرعة وأداء سريع مثل كرة الطائرة الحقيقية.
 
-![لعبة كرة الطائرة](https://tiktokio.cam/images/gameimage.webp )
+![لعبة كرة الطائرة](/images/gameimage.webp )
 
 ## ميزات لعبة Spike Volleyball Story Mod
 
@@ -47,7 +47,7 @@ category: Tech
 ### لا إعلانات: لعب غير متقطع  
 تحتوي النسخة المعدلة على إزالة كاملة للإعلانات. يمكنك التركيز على لعبتك دون أي تشتيت. استمتع باللعبة بدون مقاطعات.
 
-![تقييم اللعبة](https://tiktokio.cam/images/spikerating.webp )
+![تقييم اللعبة](/images/spikerating.webp )
 
 ## نصائح وحيل لهزيمة Spike Volleyball
 

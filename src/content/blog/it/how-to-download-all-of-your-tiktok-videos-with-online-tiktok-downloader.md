@@ -6,7 +6,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/tiktok-downloader-tiktokio.webp
+  src: /images/tiktok-downloader-tiktokio.webp
   alt: How to download all of your Tiktok videos with online Tiktok downloader
 snippet: In the world of social media marketing, a new player is making a
   significant impact TikTok. This guide explores the potential of TikTok ads and
@@ -21,7 +21,7 @@ category: Tech
 La situazione di TikTok negli Stati Uniti è sempre più critica. Se hai evitato le notizie su questo popolarissimo social, potresti non sapere che rischia di essere **bandito e chiuso definitivamente il 19 gennaio**.  
 Questa data è ormai alle porte. TikTok è diventato una forza trainante negli USA, dall'intrattenimento all'istruzione, dalle notizie alle opportunità di guadagno. Ma cosa accadrà a tutti i video dopo il ban? Ancora non è chiaro.  
 
-![Tiktokio-Tiktok Downloader](https://tiktokio.cam/images/tiktok-downloader-tiktokio.webp "Come scaricare video da TikTok")
+![Tiktokio-Tiktok Downloader](/images/tiktok-downloader-tiktokio.webp "Come scaricare video da TikTok")
 
 ## Come Salvare i Tuoi Video Prima del Ban
 

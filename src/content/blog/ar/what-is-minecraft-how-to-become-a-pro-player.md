@@ -6,7 +6,7 @@ tags:
   - Apps
  
 image:
-  src: https://tiktokio.cam/images/minecraftapk.webp
+  src: /images/minecraftapk.webp
   alt: Minecraft
 snippet: Minecraft is one of the most popular sandbox video games of all time, developed by Mojang Studios and released in 2011.
 
@@ -16,7 +16,7 @@ category: Tech
 ---
 تُعد لعبة ماين كرافت واحدة من أشهر ألعاب الساند بوكس في التاريخ، طورتها شركة Mojang Studios وصدرت لأول مرة في عام 2011. تتيح اللعبة للاعبين الاستكشاف والبناء والبقاء على قيد الحياة في عالم قائم على المكعبات، يمكن تعديله بطرق لا حصر لها. بفضل أسلوبها المفتوح، أسرت ماين كرافت قلوب الملايين حول العالم. سواء كنت مبتدئًا أو لاعبًا ذو خبرة، فإن تعلم كيفية أن تصبح محترفًا يمكن أن يحسّن تجربتك بشكل كبير.
 
-![img](https://tiktokio.cam/images/minecraftapk.webp)
+![img](/images/minecraftapk.webp)
 
 ## فهم ماين كرافت ##
 تتوفر ماين كرافت بعدة أوضاع لعب، كل منها يقدم تجربة مختلفة:

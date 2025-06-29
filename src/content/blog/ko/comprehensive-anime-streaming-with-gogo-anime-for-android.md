@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/animepicture.webp
+  src: /images/animepicture.webp
   alt: GogoAnimeAPK
 snippet: An extensive platform for viewing and downloading a wide range of anime content is offered to anime enthusiasts by the smartphone app GogoAnimeAPK.
 
@@ -17,7 +17,7 @@ category: Tech
 An extensive platform for viewing and downloading a wide range of anime content is offered to anime enthusiasts by the smartphone app GogoAnimeAPK. Both casual viewers and ardent anime fans looking for top-notch content on mobile devices are drawn to the app's intuitive layout and vast catalog.
 ## An extensive anime library
 One of GogoAnimeAPK notable features is its extensive library of anime episodes and films. The program's diverse genres—action, adventure, comedy, drama, fantasy, horror, mystery, romance, and science fiction—allow users to choose content that suits their interests. From classic titles to the most recent releases, GogoAnimeAPK strives to keep its collection current, giving fans access to both classic works and current best-sellers.
-![img](https://tiktokio.cam/images/animepicture.webp)
+![img](/images/animepicture.webp)
 ## High-quality streaming and downloading options
 [Download GogoAnimeAPK](https://gogoanimeapk.app/) prioritizes high-quality streaming for its users. Users of the application can experience crisp, clear images in a range of video resolutions, including 720p, 1080p, and 4K. GogoAnimeAPK now provides a simple download option for anyone that would rather watch offline. Without an internet connection, users can easily download their preferred TV shows or films to watch at a later time. 
 ## User-Friendly Interface and Customization

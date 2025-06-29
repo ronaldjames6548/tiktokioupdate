@@ -6,7 +6,7 @@ tags:
   - Apps
     
 image:
-  src: https://tiktokio.cam/images/mnpmodpk.jpg
+  src: /images/mnpmodpk.jpg
   alt: Manok Na Pula
 snippet: Manok Na Pula has been a magnetic game since its release in 2019. Once a game becomes popular, the thirst for modified versions arises. 
 
@@ -20,7 +20,7 @@ category: Tech
 
 تم إصدار اللعبة لأول مرة عام 2019، وهي مستوحاة من الأغنية العالمية الشهيرة "Manok Na Pula" التي أحبها الملايين. تم تطوير اللعبة من قبل **TATAY**، وقد تم تحميلها أكثر من 10 ملايين مرة من متجر Google Play حتى الآن.
 
-![img](https://tiktokio.cam/images/mnpmodpk.jpg)
+![img](/images/mnpmodpk.jpg)
 
 ## أبرز ميزات Manok Na Pula - الإصدار المعدل 2025 ##
 

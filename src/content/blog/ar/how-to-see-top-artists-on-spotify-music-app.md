@@ -5,7 +5,7 @@ author: Jon Doe
 tags:
   - Apps
 image:
-  src: https://tiktokio.cam/images/spotify-premium-apk.webp
+  src: /images/spotify-premium-apk.webp
   alt: spotify premium apk
 snippet: Spotify Premium APK, a music app, has amazed the world with its phenomenal features. Download the latest version of Spotify premium mod to enhance your music taste. 
 
@@ -13,7 +13,7 @@ publishDate: 2025-01-29 15:50
 category: Tech
 
 ---
-<p style="text-align: center"><img src="https://tiktokio.cam/images/spotify-premium-apk.webp"></p>
+<p style="text-align: center"><img src="/images/spotify-premium-apk.webp" alt="spotify-premium"></p>
 
 نعلم جميعًا أن تطبيق **Spotify Premium APK** أصبح أكبر تطبيق لبث الموسيقى، حيث يضم حتى الآن **615 مليون مشترك نشط**. الميزات الرائعة ومجموعة واسعة من الأذواق الموسيقية جعلتني أقوم بتنزيل هذا التطبيق.
 

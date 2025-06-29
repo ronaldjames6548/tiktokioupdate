@@ -6,7 +6,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/jennyminecraft.webp
+  src: /images/jennyminecraft.webp
   alt: Tiktok
 snippet: TikTok 18 is a version of the popular TikTok app, designed for users who want fewer restrictions on content.
 
@@ -23,7 +23,7 @@ Il Jenny Mod è un mod molto popolare per Minecraft che introduce un compagno di
 
 Sviluppato principalmente per la **versione Java Edition** di Minecraft, il Jenny Mod ha guadagnato notevole attenzione per le sue caratteristiche non convenzionali. Sebbene il mod sia stato oggetto di controversie, rimane un favorito tra alcuni giocatori che amano personalizzare il loro gioco con nuove opzioni.
 
-![img](https://tiktokio.cam/images/jennyminecraft.webp )
+![img](/images/jennyminecraft.webp )
 
 ## Funzionalità del Jenny Mod ##
 

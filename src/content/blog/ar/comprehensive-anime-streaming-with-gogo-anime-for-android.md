@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/animepicture.webp
+  src: /images/animepicture.webp
   alt: GogoAnimeAPK
 snippet: An extensive platform for viewing and downloading a wide range of anime content is offered to anime enthusiasts by the smartphone app GogoAnimeAPK.
 
@@ -19,7 +19,7 @@ category: Tech
 
 تطبيق GogoAnimeAPK هو منصة واسعة لعرض وتنزيل مجموعة متنوعة من محتويات الأنمي، وهو يجذب كلًا من المشاهدين العاديين وعشاق الأنمي الباحثين عن محتوى عالي الجودة على أجهزة الهواتف المحمولة بفضل تصميمه البديهي ومكتبة ضخمة من الأعمال.
 
-![صورة الأنمي](https://tiktokio.cam/images/animepicture.webp )
+![صورة الأنمي](/images/animepicture.webp )
 
 ## مكتبة أنمي شاملة
 

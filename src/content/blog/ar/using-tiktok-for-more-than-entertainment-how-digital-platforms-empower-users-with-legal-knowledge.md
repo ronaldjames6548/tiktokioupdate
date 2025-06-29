@@ -6,7 +6,7 @@ tags:
   - Apps
   
 image:
-  src: https://tiktokio.cam/images/lex.webp
+  src: /images/lex.webp
   alt: KK222
 snippet: Alimony in Pakistan is legally recognized. Social media platforms share insights on financial rights, but professional legal advice is recommended for specific cases.
 
@@ -19,7 +19,7 @@ category: Tech
 
 لحسن الحظ، توفر المنصات الرقمية الآن وسيلة لسد هذه الفجوة المعرفية. يقدّم تيك توك وغيره من وسائل التواصل الاجتماعي معلومات قانونية مبسطة من خلال فيديوهات قصيرة وجذابة. يستخدم الخبراء القانونيون وصانعو المحتوى هذه المنصات لتوضيح مواضيع معقدة، مما يساعد الناس على فهم حقوقهم، بما في ذلك موضوعات حيوية مثل **إجراءات الطلاق للباكستانيين في الخارج**.
 
-![النفقة](https://tiktokio.cam/images/lex.webp "Alimony")
+![النفقة](/images/lex.webp "Alimony")
 
 ## صعود التوعية القانونية على تيك توك ##
 ### كيف تغير وسائل التواصل الاجتماعي أسلوب التعليم القانوني ###

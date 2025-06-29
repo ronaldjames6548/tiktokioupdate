@@ -6,7 +6,7 @@ tags:
   - Apps
  
 image:
-  src: https://tiktokio.cam/images/minecraftapk.webp
+  src: /images/minecraftapk.webp
   alt: Minecraft
 snippet: Minecraft is one of the most popular sandbox video games of all time, developed by Mojang Studios and released in 2011.
 
@@ -17,7 +17,7 @@ category: Tech
 
 Minecraft è uno dei videogiochi sandbox più popolari di tutti i tempi, sviluppato da Mojang Studios e pubblicato nel 2011. Il gioco permette ai giocatori di esplorare, costruire e sopravvivere in un mondo a blocchi che può essere modificato in modi pressoché illimitati. Con il suo gameplay aperto, Minecraft ha affascinato milioni di giocatori in tutto il mondo. Che tu sia un principiante o un giocatore esperto, imparare a diventare un professionista può migliorare significativamente la tua esperienza di gioco.
 
-![img](https://tiktokio.cam/images/minecraftapk.webp)
+![img](/images/minecraftapk.webp)
 
 ## Capire Minecraft ##
 Minecraft è disponibile in diverse modalità di gioco, ognuna delle quali offre un'esperienza diversa:

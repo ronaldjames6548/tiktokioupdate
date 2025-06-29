@@ -7,7 +7,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/slidesharedownloader.webp
+  src: /images/slidesharedownloader.webp
   alt: SlideShare
 snippet: Download SlideShare PPT Slides | SlideShare PDF Presentations | Easy SlideShare Downloader Without Login
 
@@ -21,7 +21,7 @@ SlideShare is the popular platform for sharing and viewing presentations, infogr
 
 Unfortunately, SlideShare doesn't allow users to download SlideShare presentations easily. You can’t download SlideShare presentations directly without logging in to the SlideShare website. This is where SlideShare Downloader comes in handy. A **[SlideShare downloader](https://getmyppt.com/)** is an online tool that helps you download SlideShare presentations, infographics and documents easily. Whether you need a presentation for study, work, or reference, a good SlideShare downloader helps you get it in high-quality without any hassle. Most importantly, you don’t have to log in to the SlideShare website to download any SlideShare presentation. 
 
-![SlideShare Downloader](https://tiktokio.cam/images/slideshare.webp "SlideShare Downloader")
+![SlideShare Downloader](/images/slideshare.webp "SlideShare Downloader")
 
 ## **Reasons to Use SlideShare Downloader**
 There are several reasons that tells SlideShare downloader is quite useful tool for all:
@@ -47,7 +47,7 @@ Now, open the SlideShare Downloader, paste the copied URL in the given tool spac
 
 ### **SlideShare PPT or SlideShare PDF Download Button**
 Now, you will find two different options to download from SlideShare downloader. One shows SlideShare PPT and another will show SlideShare PDF. Press the Download button of your required file format.  
-![SlideShare Downloader](https://tiktokio.cam/images/how-to-download.webp "SlideShare Downloader")
+![SlideShare Downloader](/images/how-to-download.webp "SlideShare Downloader")
 
 ## **Features of SlideShare Downloader**
 Not all SlideShare Downloaders are the same. A good downloader should have the following features:

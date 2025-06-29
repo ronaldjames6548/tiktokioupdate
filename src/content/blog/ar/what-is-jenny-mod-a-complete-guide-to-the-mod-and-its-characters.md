@@ -6,7 +6,7 @@ tags:
   - Apps
 
 image:
-  src: https://tiktokio.cam/images/jennyminecraft.webp
+  src: /images/jennyminecraft.webp
   alt: Tiktok
 snippet: TikTok 18 is a version of the popular TikTok app, designed for users who want fewer restrictions on content.
 
@@ -15,7 +15,7 @@ category: Tech
 
 ---
 
-![شخصية جيني في ماينكرافت](https://tiktokio.cam/images/jennyminecraft.webp "جيني مود لماينكرافت")
+![شخصية جيني في ماينكرافت](/images/jennyminecraft.webp "جيني مود لماينكرافت")
 
 تمتلك ماينكرافت مجتمعًا ضخمًا لصنع الإضافات (المودات) الذي يبتكر محتوى جديدًا باستمرار، مضيفًا الإثارة والعمق للعبة. أحد أكثر المودات التي يتم الحديث عنها في هذا المجتمع هو **جيني مود**. يقدم هذا المود شخصية جديدة اسمها جيني وعدة شخصيات أخرى فريدة، مما يوسع تجربة ماينكرافت بطريقة مختلفة عن النسخة الأصلية. في هذه المقالة، سنستكشف ما هو جيني مود، مميزاته، والشخصيات المتضمنة فيه.
 
