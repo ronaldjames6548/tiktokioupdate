@@ -50,7 +50,7 @@ Spike Volleyball ha effetti sonori coinvolgenti. La colonna sonora è dinamica e
 ### **Nessuna pubblicità: Azione di volley senza interruzioni**
 Questa versione modificata è priva di pubblicità. Senza annunci, puoi concentrarti completamente sul gioco senza distrazioni. Goditi il gioco senza alcun disturbo.
 
-![Valutazione di Spike](/images/spikerating.webp )
+![Valutazione di Spike](/images/gameimage.webp )
 
 ---
 

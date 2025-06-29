@@ -21,7 +21,7 @@ SlideShare is the popular platform for sharing and viewing presentations, infogr
 
 Unfortunately, SlideShare doesn't allow users to download SlideShare presentations easily. You can’t download SlideShare presentations directly without logging in to the SlideShare website. This is where SlideShare Downloader comes in handy. A **[SlideShare downloader](https://getmyppt.com/)** is an online tool that helps you download SlideShare presentations, infographics and documents easily. Whether you need a presentation for study, work, or reference, a good SlideShare downloader helps you get it in high-quality without any hassle. Most importantly, you don’t have to log in to the SlideShare website to download any SlideShare presentation. 
 
-![SlideShare Downloader](/images/slideshare.webp "SlideShare Downloader")
+![SlideShare Downloader](/images/slidesharedownloader.webp "SlideShare Downloader")
 
 ## **Reasons to Use SlideShare Downloader**
 There are several reasons that tells SlideShare downloader is quite useful tool for all:

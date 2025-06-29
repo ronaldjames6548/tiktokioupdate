@@ -43,7 +43,7 @@ Spike Volleyball's story has sound effects. The soundtrack is fast-paced and exc
 
 ### **No Ads: Uninterrupted Volleyball Action**
 This mod version has ads free. With no Ads, focus on your game without distraction. Enjoy this game without any disturbance.
-![img](/images/spikerating.webp)
+![img](/images/gameimage.webp)
 
 ## **Tips and Tricks to Conquer Spike Volleyball**
 
