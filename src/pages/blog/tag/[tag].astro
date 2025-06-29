@@ -6,7 +6,6 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import i18next, { changeLanguage } from "i18next";
-import { t } from "astro-i18next";
 
 changeLanguage("en");
 
@@ -43,19 +42,12 @@ export async function getStaticPaths() {
 const { posts, tag, lang } = Astro.props;
 ---
 
-<Layout 
-  title={`${t("mics.tag_title1")} ${tag} ${t("mics.tag_title2")}`} 
-  lang={lang}
->
-  <Container>
-    <Sectionhead>
-      <Fragment slot="title">
-        {`${t("mics.tag_title1")} ${tag} ${t("mics.tag_title2")}`}
-      </Fragment>
-      <Fragment slot="desc">
-        {`${t("mics.tag_desc")} ${tag} ${t("mics.tag_desc2")}`}
-      </Fragment>
-    </Sectionhead>
-    <Posts posts={posts} />
-  </Container>
+<Layout title="Blog">
+	<Container>
+		<Sectionhead>
+			<Fragment slot="title">#{tag}</Fragment>
+			<Fragment slot="desc">We write about building startups and thoughts going on our mind.</Fragment>
+		</Sectionhead>
+		<Posts posts={posts} />
+	</Container>
 </Layout>

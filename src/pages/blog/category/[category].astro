@@ -40,12 +40,12 @@ export async function getStaticPaths() {
 const { posts, category, lang } = Astro.props;
 ---
 
-<Layout title={`Find all the posts about ${category} | Tiktokio TikTok Downloader`}>  
-<Container>
-    <Sectionhead>
-      <Fragment slot="title">{`Find all the posts about ${category} | Tiktokio TikTok Downloader`}</Fragment>
-      <Fragment slot="desc">{`Browse our complete collection of articles and tutorials related to ${category}. Learn how to download TikTok videos, remove watermarks and more.`}</Fragment>
-    </Sectionhead>
-    <Posts posts={posts} />
-  </Container>
+<Layout title="Blog">
+	<Container>
+		<Sectionhead>
+			<Fragment slot="title">#{category}</Fragment>
+			<Fragment slot="desc">We write about building startups and thoughts going on our mind.</Fragment>
+		</Sectionhead>
+		<Posts posts={posts} />
+	</Container>
 </Layout>
