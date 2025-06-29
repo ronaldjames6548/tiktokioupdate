@@ -44,21 +44,21 @@ const makeTitle = title
 		<link rel="stylesheet" href="/index.css" />
 
 		<SEO
-			title={makeTitle}
-			description={t("site.description")}
-			canonical={canonicalURL}
-			openGraph={{
-				basic: {
-					url: canonicalURL,
-					type: "website",
-					title: `{makeTitle}`,
-					image: resolvedImageWithDomain,
-				},
-				image: {
-					alt: "{t("hero.title")}",
-				},
-			}}
-		/>
+  title={makeTitle}
+  description={t("site.description")}
+  canonical={canonicalURL}
+  openGraph={{
+    basic: {
+      url: canonicalURL,
+      type: "website",
+      title: makeTitle,  
+      image: resolvedImageWithDomain,
+    },
+    image: {
+      alt: t("hero.title"),
+    },
+  }}
+/>
 <!-- Add Twitter Card tags here -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content={makeTitle} />
