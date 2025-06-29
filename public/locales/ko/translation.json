@@ -154,7 +154,16 @@
     "contact_submit": "메시지 보내기",
     "blog": "TikTokio 블로그 - TikTok 다운로더 팁, 노하우 및 최신 정보",
     "blog_h1": "TikTok 동영상 다운로드 완전 가이드 - TikTokio 블로그",
-    "blog_desc": "TikTokio 블로그와 함께 TikTok 동영상 다운로드를 완벽하게 mastering 해보세요! 워터마크 없이 동영상을 저장하는 단계별 안내, 인기 팁 확인, HD MP4 품질로 무료 다운로드 가능! 로그인 필요 없음!"
+    "blog_desc": "TikTokio 블로그와 함께 TikTok 동영상 다운로드를 완벽하게 mastering 해보세요! 워터마크 없이 동영상을 저장하는 단계별 안내, 인기 팁 확인, HD MP4 품질로 무료 다운로드 가능! 로그인 필요 없음!",
+	"back_blog": "블로그로 돌아가기",
+	"category_title1": "다음에 대한 모든 게시글 찾기:",
+	"category_title2": "Tiktokio TikTok 다운로더에서",
+	"category_desc": "다음과 관련된 기사 및 튜토리얼 전체 컬렉션을 확인해 보세요.",
+	"category_desc2": "TikTok 동영상 다운로드 방법, 워터마크 제거 방법 등을 알아보세요.",
+	"tag_title1": "다음에 대한 모든 게시글 찾기:",
+	"tag_title2": "Tiktokio TikTok 비디오 다운로더에서",
+	"tag_desc": "다음과 관련된 기사 및 튜토리얼 전체 컬렉션을 확인해 보세요.",
+	"tag_desc2": "TikTok 동영상 다운로드 방법, 워터마크 제거 방법 등을 알아보세요."
 	},
     "blog": {
         "prev": "이전",
