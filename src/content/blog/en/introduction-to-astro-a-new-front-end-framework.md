@@ -6,7 +6,7 @@ tags:
   - Apps
  
 image:
-  src: /images/astrojs.avif
+  src: /images/astrojs.webp
   alt: Astro JS, a new Front-End Framework
 snippet: Astro is a modern front-end framework that brings an interesting
   paradigm shift in web application development, focusing on sending less

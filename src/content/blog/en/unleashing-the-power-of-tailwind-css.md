@@ -7,7 +7,7 @@ tags:
 
 image:
   alt: Tailwind CSS
-  src: /images/tailwind.avif
+  src: /images/tailwind.webp
 snippet: Tailwind CSS is a utility-first CSS framework that allows you to
   construct bespoke designs without any opinionated styles, offering flexibility
   and granular control over your styles.
