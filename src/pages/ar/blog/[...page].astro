@@ -6,11 +6,12 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import i18next, { changeLanguage } from "i18next";
+import { t } from "i18next";
 
-changeLanguage("it");
+changeLanguage("ar");
 
 export async function getStaticPaths({ paginate }) {
-	changeLanguage("it");
+	changeLanguage("ar");
 	var posts = await getCollection("blog", ({ data }) => {
 		return !data.draft;
 	});
@@ -43,11 +44,11 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<Layout title="Blog">
+<Layout title={t("mics.blog")}>
 	<Container>
 		<Sectionhead>
-			<Fragment slot="title">Our Blog</Fragment>
-			<Fragment slot="desc">Discover Industry Insights, Company News, and Expert Opinions.</Fragment>
+			<Fragment slot="title">{t("mics.blog_h1")}</Fragment>
+			<Fragment slot="desc">{t("mics.blog_desc")}</Fragment>
 		</Sectionhead>
 		<Posts posts={page.data} />
 		<Pagination class="mt-20" prevUrl={page.url.prev} nextUrl={page.url.next} />

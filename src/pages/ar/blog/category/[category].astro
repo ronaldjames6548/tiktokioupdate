@@ -7,7 +7,7 @@ import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
 import i18next, { changeLanguage } from "i18next";
 
-changeLanguage("it");
+changeLanguage("ar");
 
 export async function getStaticPaths() {
 	changeLanguage("it");
@@ -40,12 +40,12 @@ export async function getStaticPaths() {
 const { posts, category, lang } = Astro.props;
 ---
 
-<Layout title="Blog">
-	<Container>
-		<Sectionhead>
-			<Fragment slot="title">#{category}</Fragment>
-			<Fragment slot="desc">We write about building startups and thoughts going on our mind.</Fragment>
-		</Sectionhead>
-		<Posts posts={posts} />
-	</Container>
+<Layout title={`اكتشف جميع المقالات حول ${category} | تيك توكيو — تنزيل فيديوهات تيك توك`}>  
+<Container>
+    <Sectionhead>
+      <Fragment slot="title">{`اكتشف جميع المقالات حول ${category} | تيك توكيو — تنزيل فيديوهات تيك توك`}</Fragment>
+      <Fragment slot="desc">{` تعلم كيفية تنزيل مقاطع فيديو TikTok وإزالة العلامات المائية والمزيد ${category} تصفح مجموعتنا الكاملة من المقالات والدروس`}</Fragment>
+    </Sectionhead>
+    <Posts posts={posts} />
+  </Container>
 </Layout>

@@ -42,12 +42,19 @@ export async function getStaticPaths() {
 const { posts, tag, lang } = Astro.props;
 ---
 
-<Layout title="Blog">
-	<Container>
-		<Sectionhead>
-			<Fragment slot="title">#{tag}</Fragment>
-			<Fragment slot="desc">We write about building startups and thoughts going on our mind.</Fragment>
-		</Sectionhead>
-		<Posts posts={posts} />
-	</Container>
+<Layout 
+  title={`${t("mics.tag_title1")} ${tag} ${t("mics.tag_title2")}`} 
+  lang={lang}
+>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">
+        {`${t("mics.tag_title1")} ${tag} ${t("mics.tag_title2")}`}
+      </Fragment>
+      <Fragment slot="desc">
+        {`${t("mics.tag_desc")} ${tag} ${t("mics.tag_desc2")}`}
+      </Fragment>
+    </Sectionhead>
+    <Posts posts={posts} />
+  </Container>
 </Layout>
