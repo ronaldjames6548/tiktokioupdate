@@ -1,77 +1,46 @@
 ---
 import { getCollection } from "astro:content";
-import i18next from "i18next";
-
-// Set language based on folder name (e.g., /ar/ => 'ar')
-const lang = Astro.params.lang; // e.g., 'ar'
-await i18next.changeLanguage(lang).catch(() => {});
 
 // Fetch all blog posts
 const posts = await getCollection("blog", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
 });
 
-// Filter by current language
+// Filter by current language (based on folder structure)
+const lang = "ar"; // because this file is in /ar/
 const localizedPosts = posts.filter((post) => {
   const [postLang] = post.slug.split("/");
   return postLang === lang;
 });
 
-// Get unique categories
+// Get unique categories from localized posts
 const categories = new Set(
   localizedPosts
     .map((post) => post.data.category?.toLowerCase())
     .filter(Boolean)
 );
 
-// Generate paths for each category and language
+// Generate paths for each category
 export async function getStaticPaths() {
-  const languages = [["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"]; // Add all supported locales
-  const paths = [];
-
-  for (const lang of languages) {
-    const langPosts = localizedPosts.filter((post) => {
-      const [postLang] = post.slug.split("/");
-      return postLang === lang;
-    });
-
-    const langCategories = new Set(
-      langPosts.map((post) => post.data.category?.toLowerCase()).filter(Boolean)
-    );
-
-    for (const category of langCategories) {
-      paths.push({
-        params: { category },
-        props: {
-          posts: langPosts.filter(
-            (post) =>
-              typeof post.data.category === "string" &&
-              post.data.category.toLowerCase() === category
-          ),
-          category,
-          lang,
-        },
-      });
-    }
-  }
-
-  return paths;
+  return Array.from(categories).map((category) => ({
+    params: { category },
+    props: {
+      posts: localizedPosts.filter(
+        (post) =>
+          typeof post.data.category === "string" &&
+          post.data.category.toLowerCase() === category
+      ),
+      category,
+      lang,
+    },
+  }));
 }
 ---
 
-<Layout 
-  title={`${t("mics.category_title1")} ${category} ${t("mics.category_title2")}`} 
-  lang={lang}
->
+<!-- Now use the props passed via getStaticPaths -->
+<Layout title={`Category: ${category}`} lang={lang}>
   <Container>
-    <Sectionhead>
-      <Fragment slot="title">
-        {`${t("mics.category_title1")} ${category} ${t("mics.category_title2")}`}
-      </Fragment>
-      <Fragment slot="desc">
-        {`${t("mics.category_desc")} ${category} ${t("mics.category_desc2")}`}
-      </Fragment>
-    </Sectionhead>
+    <h1>Category: {category}</h1>
     <Posts posts={posts} />
   </Container>
 </Layout>
