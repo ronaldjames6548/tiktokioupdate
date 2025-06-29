@@ -10,7 +10,7 @@ import i18next, { changeLanguage } from "i18next";
 changeLanguage("ar");
 
 export async function getStaticPaths() {
-	changeLanguage("it");
+	changeLanguage("ar");
 	const posts = await getCollection("blog", ({ data }) => {
 		return !data.draft && data.publishDate < new Date();
 	});
