@@ -1,46 +1,51 @@
 ---
 import { getCollection } from "astro:content";
+import Pagination from "@components/blog/pagination.astro";
+import Posts from "@components/blog/posts.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import Layout from "@layouts/Layout.astro";
+import i18next, { changeLanguage } from "i18next";
 
-// Fetch all blog posts
-const posts = await getCollection("blog", ({ data }) => {
-  return !data.draft && data.publishDate < new Date();
-});
+changeLanguage("en");
 
-// Filter by current language (based on folder structure)
-const lang = "ar"; // because this file is in /ar/
-const localizedPosts = posts.filter((post) => {
-  const [postLang] = post.slug.split("/");
-  return postLang === lang;
-});
-
-// Get unique categories from localized posts
-const categories = new Set(
-  localizedPosts
-    .map((post) => post.data.category?.toLowerCase())
-    .filter(Boolean)
-);
-
-// Generate paths for each category
 export async function getStaticPaths() {
-  return Array.from(categories).map((category) => ({
-    params: { category },
-    props: {
-      posts: localizedPosts.filter(
-        (post) =>
-          typeof post.data.category === "string" &&
-          post.data.category.toLowerCase() === category
-      ),
-      category,
-      lang,
-    },
-  }));
+	changeLanguage("en");
+	const posts = await getCollection("blog", ({ data }) => {
+		return !data.draft && data.publishDate < new Date();
+	});
+	const localizedPosts = posts.filter((page) => {
+		const [lang, ...slug] = page.slug.split("/");
+		return lang === i18next.language;
+	});
+	const categories = new Set();
+	localizedPosts.map((post) => {
+		typeof post.data.category === "string" &&
+			categories.add(post.data.category.toLowerCase());
+	});
+	return Array.from(categories).map((category) => {
+		return {
+			params: { category: category },
+			props: {
+				posts: localizedPosts.filter(
+					(post) => typeof post.data.category === "string",
+				),
+				category: category,
+				lang: i18next.language,
+			},
+		};
+	});
 }
+// Get the post directly from the prop on render
+const { posts, category, lang } = Astro.props;
 ---
 
-<!-- Now use the props passed via getStaticPaths -->
-<Layout title={`Category: ${category}`} lang={lang}>
-  <Container>
-    <h1>Category: {category}</h1>
+<Layout title={`Find all the posts about ${category} | Tiktokio TikTok Downloader`}>  
+<Container>
+    <Sectionhead>
+      <Fragment slot="title">{`Find all the posts about ${category} | Tiktokio TikTok Downloader`}</Fragment>
+      <Fragment slot="desc">{`Browse our complete collection of articles and tutorials related to ${category}. Learn how to download TikTok videos, remove watermarks and more.`}</Fragment>
+    </Sectionhead>
     <Posts posts={posts} />
   </Container>
 </Layout>
