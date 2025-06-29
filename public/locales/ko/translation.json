@@ -136,6 +136,20 @@
         "privacy": "데이터 보호에 관심이 있습니다. 당사의",
         "privacy_link": "개인정보 보호정책을 확인하세요."
     },
+	"mics": {
+    "contact_title": "TikTokio 문의 - TikTok 동영상 다운로더 지원팀",
+    "contact_h1": "Tiktokio 관련 질문에 대한 답변을 확인하세요",
+    "contact_h2": "문의하기",
+    "contact_text": "워터마크 없이 TikTok 동영상을 다운로드하는 방법에 대해 질문이 있으시거나, 지원이 필요하시거나 피드백을 공유하고 싶으시면 언제든지 연락 주세요. 최대한 빠르게 답변드리겠습니다.",
+    "contact_form_h": "문의 작성",
+    "contact_form_f1": "이름",
+    "contact_form_f2": "이메일 주소",
+    "contact_form_f3": "메시지를 입력해주세요...",
+    "contact_submit": "메시지 보내기",
+    "blog": "TikTokio 블로그 - TikTok 다운로더 팁, 노하우 및 최신 정보",
+    "blog_h1": "TikTok 동영상 다운로드 완전 가이드 - TikTokio 블로그",
+    "blog_desc": "TikTokio 블로그와 함께 TikTok 동영상 다운로드를 완벽하게 mastering 해보세요! 워터마크 없이 동영상을 저장하는 단계별 안내, 인기 팁 확인, HD MP4 품질로 무료 다운로드 가능! 로그인 필요 없음!"
+	},
     "blog": {
         "prev": "이전",
         "next": "다음"

@@ -136,6 +136,20 @@
         "privacy": "Nos preocupamos por la protección de tus datos. Lee nuestra",
         "privacy_link": "Política de Privacidad."
     },
+	"mics": {
+    "contact_title": "Contáctanos en TikTokio – Equipo de Soporte del Descargador de Videos de TikTok",
+    "contact_h1": "Encuentra Respuestas a Tus Preguntas sobre Tiktokio",
+    "contact_h2": "CONTÁCTANOS",
+    "contact_text": "Si tienes preguntas sobre el descargador de videos de TikTok sin marca de agua, necesitas soporte o simplemente quieres compartir tus comentarios, estamos atentos. Contáctanos y te responderemos lo más pronto posible.",
+    "contact_form_h": "Ponte en contacto con nosotros",
+    "contact_form_f1": "Tu nombre",
+    "contact_form_f2": "Tu dirección de correo electrónico",
+    "contact_form_f3": "Escribe tu mensaje...",
+    "contact_submit": "Enviar mensaje",
+    "blog": "Publicaciones del blog de TikTokio – Consejos, trucos y últimas actualizaciones del descargador de TikTok",
+    "blog_h1": "La guía definitiva para descargar videos de TikTok – Blog de TikTokio",
+    "blog_desc": "Domina la descarga de videos de TikTok con el blog de TikTokio. Obtén guías paso a paso para guardar videos sin marca de agua, descubre trucos populares y descarga en calidad HD MP4: ¡completamente gratis! No se requiere inicio de sesión."
+	},
     "blog": {
         "prev": "Anterior",
         "next": "Siguiente"

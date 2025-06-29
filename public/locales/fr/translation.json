@@ -136,6 +136,20 @@
         "privacy": "Nous attachons de l'importance à la protection de vos données. Lisez notre",
         "privacy_link": "Politique de Confidentialité."
     },
+	"mics": {
+    "contact_title": "Contactez TikTokio – Équipe d'assistance du téléchargeur de vidéos TikTok",
+    "contact_h1": "Obtenez des réponses à vos questions sur Tiktokio",
+    "contact_h2": "NOUS CONTACTER",
+    "contact_text": "Que vous ayez des questions concernant le téléchargement de vidéos TikTok sans filigrane, que vous ayez besoin d’un support ou que vous souhaitiez simplement partager votre avis, nous sommes à l’écoute. Contactez-nous et nous vous répondrons dès que possible.",
+    "contact_form_h": "Contactez-nous",
+    "contact_form_f1": "Votre nom",
+    "contact_form_f2": "Votre adresse e-mail",
+    "contact_form_f3": "Écrivez votre message...",
+    "contact_submit": "Envoyer le message",
+    "blog": "Articles du blog TikTokio – Astuces, conseils et dernières mises à jour du téléchargeur TikTok",
+    "blog_h1": "Le guide ultime pour télécharger des vidéos TikTok – Blog TikTokio",
+    "blog_desc": "Maîtrisez le téléchargement de vidéos TikTok avec le blog TikTokio ! Découvrez des guides étape par étape pour enregistrer des vidéos sans filigrane, trouvez les astuces tendance et téléchargez en MP4 HD – totalement gratuit. Aucune connexion requise !"
+	},
     "blog": {
         "prev": "Précédent",
         "next": "Suivant"

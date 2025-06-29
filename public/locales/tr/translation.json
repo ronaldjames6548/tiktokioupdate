@@ -137,6 +137,20 @@
         "privacy": "Verilerinizin korunmasına önem veriyoruz. Ayrıntılar için",
         "privacy_link": "Gizlilik Politikamızı okuyun."
     },
+	"mics": {
+    "contact_title": "TikTokio ile İletişim – TikTok Video İndirici Destek Ekibi",
+    "contact_h1": "Tiktokio Sorularınızın Cevaplarını Alın",
+    "contact_h2": "BİZİMLE İLETİŞİME GEÇİN",
+    "contact_text": "Filigransız TikTok video indiriciyle ilgili bir sorunuz mu var, destek mi gerekiyor yoksa görüşlerinizi mi paylaşmak istiyorsunuz? Her zaman buradayız. Bize ulaşın ve en kısa sürede size dönüş yapacağız.",
+    "contact_form_h": "Bizimle İletişime Geçin",
+    "contact_form_f1": "Adınız",
+    "contact_form_f2": "E-posta adresiniz",
+    "contact_form_f3": "Mesajınızı yazın...",
+    "contact_submit": "Mesajı Gönder",
+    "blog": "TikTokio Blog Yazıları – TikTok İndirici Tüyoları, Püf Noktaları ve Son Güncellemeler",
+    "blog_h1": "TikTok Video İndirmenin Nihai Kılavuzu – TikTokio Blog",
+    "blog_desc": "TikTokio blog sayesinde TikTok indirmeyi uzmanlaşın! Filigransız videoları kaydetmek için adım adım rehberler alın, trend püf noktalarını keşfedin ve HD MP4 formatında indirin—%100 ücretsiz. Giriş yapmaya gerek yok!"
+	},
     "blog": {
         "prev": "Önceki",
         "next": "Sonraki"

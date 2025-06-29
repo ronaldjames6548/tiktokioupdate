@@ -136,6 +136,20 @@
         "privacy": "Wir nehmen den Schutz Ihrer Daten ernst. Lesen Sie unsere",
         "privacy_link": "Datenschutzerklärung."
     },
+	"mics": {
+    "contact_title": "Kontaktiere TikTokio – Support-Team für den TikTok Video Downloader",
+    "contact_h1": "Finde Antworten auf deine Tiktokio-Fragen",
+    "contact_h2": "KONTAKTIERE UNS",
+    "contact_text": "Ob du Fragen zum TikTok-Video-Downloader ohne Wasserzeichen hast, Unterstützung benötigst oder einfach nur dein Feedback teilen möchtest – wir hören dir gerne zu. Nimm Kontakt mit uns auf, und wir antworten dir so bald wie möglich.",
+    "contact_form_h": "Kommunikation mit uns",
+    "contact_form_f1": "Dein Name",
+    "contact_form_f2": "Deine E-Mail-Adresse",
+    "contact_form_f3": "Schreibe deine Nachricht...",
+    "contact_submit": "Nachricht senden",
+    "blog": "TikTokio Blogbeiträge – Tipps, Tricks & aktuelle Updates zum TikTok Downloader",
+    "blog_h1": "Der ultimative Leitfaden zum Herunterladen von TikTok-Videos – TikTokio Blog",
+    "blog_desc": "Beherrsche das TikTok-Video-Downloaden mit dem TikTokio-Blog! Erhalte Schritt-für-Schritt-Anleitungen, um Videos ohne Wasserzeichen zu speichern, entdecke beliebte Tricks und lade in HD-MP4-Qualität herunter – zu 100 % kostenlos. Keine Anmeldung erforderlich!"
+	},
     "blog": {
         "prev": "Vorheriger",
         "next": "Nächster"

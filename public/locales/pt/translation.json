@@ -136,6 +136,20 @@
         "privacy": "Nos preocupamos com a proteção dos seus dados. Leia nossa",
         "privacy_link": "Política de Privacidade."
     },
+	"mics": {
+    "contact_title": "Entre em Contato com o TikTokio – Equipe de Suporte do Baixador de Vídeos do TikTok",
+    "contact_h1": "Encontre Respostas para Suas Perguntas sobre o Tiktokio",
+    "contact_h2": "ENTRE EM CONTATO CONOSCO",
+    "contact_text": "Se você tem perguntas sobre o baixador de vídeos do TikTok sem marca d'água, precisa de suporte ou deseja apenas compartilhar seu feedback, estamos à disposição. Entre em contato conosco e responderemos o mais breve possível.",
+    "contact_form_h": "Fale Conosco",
+    "contact_form_f1": "Seu Nome",
+    "contact_form_f2": "Seu endereço de e-mail",
+    "contact_form_f3": "Escreva sua mensagem...",
+    "contact_submit": "Enviar Mensagem",
+    "blog": "Artigos do Blog TikTokio – Dicas, Truques e Atualizações do Baixador do TikTok",
+    "blog_h1": "O Guia Definitivo para Baixar Vídeos do TikTok – Blog do TikTokio",
+    "blog_desc": "Aprenda a baixar vídeos do TikTok como um profissional com o blog do TikTokio! Obtenha guias passo a passo para salvar vídeos sem marca d'água, descubra truques populares e baixe em qualidade HD MP4 — totalmente gratuito. Nenhuma login necessário!"
+	},
     "blog": {
         "prev": "Anterior",
         "next": "Próximo"

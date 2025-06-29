@@ -136,6 +136,20 @@
         "privacy": "We zorgen om de bescherming van je gegevens. Lees ons",
         "privacy_link": "Privacybeleid."
     },
+	"mics": {
+    "contact_title": "Neem contact op met TikTokio – Team van TikTok Video Downloader",
+    "contact_h1": "Vind antwoorden op je vragen over Tiktokio",
+    "contact_h2": "NEEM CONTACT MET ONS OP",
+    "contact_text": "Of je nu vragen hebt over de TikTok video-downloader zonder watermerk, ondersteuning nodig hebt of gewoon feedback wilt delen: wij luisteren. Neem contact met ons op en we reageren zo snel mogelijk.",
+    "contact_form_h": "Neem contact met ons op",
+    "contact_form_f1": "Jouw naam",
+    "contact_form_f2": "Jouw e-mailadres",
+    "contact_form_f3": "Schrijf je bericht...",
+    "contact_submit": "Verstuur bericht",
+    "blog": "TikTokio Blogartikelen – Tips, trucs & laatste updates voor TikTok Downloader",
+    "blog_h1": "De uitgebreide gids voor het downloaden van TikTok-video's – TikTokio Blog",
+    "blog_desc": "Beheers het downloaden van TikTok-video's met de hulp van het TikTokio-blog! Krijg stap-voor-stap uitleg om video's zonder watermerk op te slaan, ontdek populaire trucs en download in HD MP4-kwaliteit — volledig gratis. Geen login vereist!"
+	},
     "blog": {
         "prev": "Vorige",
         "next": "Volgende"
