@@ -8,10 +8,10 @@ import Layout from "@layouts/Layout.astro";
 import i18next, { changeLanguage } from "i18next";
 import { t } from "i18next";
 
-changeLanguage("it");
+changeLanguage("ar");
 
 export async function getStaticPaths() {
-	changeLanguage("it");
+	changeLanguage("ar");
 	const posts = await getCollection("blog", ({ data }) => {
 		return !data.draft && data.publishDate < new Date();
 	});
