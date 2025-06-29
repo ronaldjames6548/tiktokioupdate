@@ -1,53 +1,56 @@
 ---
 import { getCollection } from "astro:content";
-import Pagination from "@components/blog/pagination.astro";
 import Posts from "@components/blog/posts.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Layout from "@layouts/Layout.astro";
-import i18next, { changeLanguage } from "i18next";
-
-changeLanguage("en");
+import { t } from "i18next";
 
 export async function getStaticPaths() {
-	changeLanguage("en");
-	const posts = await getCollection("blog", ({ data }) => {
-		return !data.draft && data.publishDate < new Date();
-	});
-	const localizedPosts = posts.filter((page) => {
-		const [lang, ...slug] = page.slug.split("/");
-		return lang === i18next.language;
-	});
-	const tags = new Set();
-	localizedPosts.map((post) => {
-		Array.isArray(post.data.tags) &&
-			post.data.tags.map((tag) => tags.add(tag.toLowerCase()));
-	});
-	return Array.from(tags).map((tag) => {
-		return {
-			params: { tag: tag },
-			props: {
-				posts: localizedPosts.filter(
-					(post) =>
-						Array.isArray(post.data.tags) &&
-						post.data.tags.find((elem) => elem.toLowerCase() === tag),
-				),
-				tag: tag,
-				lang: i18next.language,
-			},
-		};
-	});
+  const posts = await getCollection("blog", ({ data }) => 
+    !data.draft && data.publishDate < new Date()
+  );
+  
+  const languages = "en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"];
+
+  return languages.flatMap(lang => {
+    const langPosts = posts.filter(post => post.slug.startsWith(`${lang}/`));
+    const tags = new Set();
+    
+    langPosts.forEach(post => {
+      post.data.tags?.forEach(tag => tags.add(tag.toLowerCase()));
+    });
+
+    return Array.from(tags).map(tag => ({
+      params: { tag, lang },
+      props: {
+        posts: langPosts.filter(post => 
+          post.data.tags?.some(t => t.toLowerCase() === tag)
+        ),
+        tag,
+        lang
+      }
+    }));
+  });
 }
-// Get the post directly from the prop on render
-const { posts, tag, lang } = Astro.props;
+
+const { posts = [], tag, lang } = Astro.props;
+if (!tag) return new Response(null, { status: 404 });
 ---
 
-<Layout title="Blog">
-	<Container>
-		<Sectionhead>
-			<Fragment slot="title">#{tag}</Fragment>
-			<Fragment slot="desc">We write about building startups and thoughts going on our mind.</Fragment>
-		</Sectionhead>
-		<Posts posts={posts} />
-	</Container>
+<Layout 
+  title={`${t("mics.tag_title1")} ${tag} ${t("mics.tag_title2")}`} 
+  lang={lang}
+>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">
+        {`${t("mics.tag_title1")} ${tag} ${t("mics.tag_title2")}`}
+      </Fragment>
+      <Fragment slot="desc">
+        {`${t("mics.tag_desc")} ${tag} ${t("mics.tag_desc2")}`}
+      </Fragment>
+    </Sectionhead>
+    <Posts posts={posts} />
+  </Container>
 </Layout>
