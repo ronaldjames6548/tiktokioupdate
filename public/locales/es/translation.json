@@ -137,6 +137,12 @@
         "privacy_link": "Política de Privacidad."
     },
 	"mics": {
+	"404_title": "Error 404 Página no encontrada | Tiktokio TikTok Downloader",
+    "404_h2_text": "Error",
+    "404_h2_text2": "404 Página no encontrada",
+    "404_line1": "Lo sentimos, no pudimos encontrar esta página.",
+    "404_line2": "Pero no te preocupes, puedes encontrar muchas otras cosas en nuestra página de inicio.",
+    "404_back": "Volver a la página de inicio",
     "contact_title": "Contáctanos en TikTokio – Equipo de Soporte del Descargador de Videos de TikTok",
     "contact_h1": "Encuentra Respuestas a Tus Preguntas sobre Tiktokio",
     "contact_h2": "CONTÁCTANOS",

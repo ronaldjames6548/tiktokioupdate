@@ -138,6 +138,12 @@
     "privacy_link": "Kebijakan Privasi kami."
   },
   "mics": {
+	"404_title": "Kesalahan 404 Halaman Tidak Ditemukan | Tiktokio TikTok Downloader",
+    "404_h2_text": "Kesalahan",
+    "404_h2_text2": "404 Halaman Tidak Ditemukan",
+    "404_line1": "Maaf, kami tidak dapat menemukan halaman ini.",
+    "404_line2": "Tapi jangan khawatir, Anda bisa menemukan banyak hal lainnya di halaman utama kami.",
+    "404_back": "Kembali ke halaman utama",
     "contact_title": "Hubungi TikTokio – Tim Dukungan Pengunduh Video TikTok",
     "contact_h1": "Temukan Jawaban untuk Pertanyaan Anda tentang Tiktokio",
     "contact_h2": "HUBUNGI KAMI",
