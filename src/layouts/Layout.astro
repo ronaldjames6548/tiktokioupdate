@@ -51,15 +51,21 @@ const makeTitle = title
 				basic: {
 					url: canonicalURL,
 					type: "website",
-					title: `Astros - Starter Template for Astro`,
+					title: `{makeTitle}`,
 					image: resolvedImageWithDomain,
 				},
 				image: {
-					alt: "Astros Homepage Screenshot",
+					alt: "{t("hero.title")}",
 				},
 			}}
 		/>
-
+<!-- Add Twitter Card tags here -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={makeTitle} />
+  <meta name="twitter:description" content={t("site.description")} />
+  <meta name="twitter:image" content={resolvedImageWithDomain} />
+  <meta name="twitter:site" content="@YourTwitterHandle" /> <!-- Replace with your handle -->
+  <meta name="twitter:creator" content="@AuthorTwitterHandle" /> <!-- Optional: Author handle -->
 
 		<script is:inline>
 			function handleThemeChange() {
