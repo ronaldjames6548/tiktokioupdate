@@ -80,8 +80,8 @@ function InputScreen({}: Props) {
 
 {/* input data start */}
 <div class="max-w-6xl mx-auto">
-    <div class="download-box p-1 rounded-2xl shadow-xl">
-        <div class="bg-gray-800/80 rounded-xl backdrop-blur-md p-6">
+    <div class="download-box rounded-2xl">
+        <div class="bg-gray-800/80 rounded-xl backdrop-blur-md p-4">
             <form class="flex flex-col md:flex-row items-stretch md:items-center gap-2"
               onSubmit={(e) => {
               e.preventDefault();
@@ -98,7 +98,7 @@ function InputScreen({}: Props) {
                     value={url()}
                     onInput={(e) => setUrl(e.currentTarget.value)}
                     placeholder="Paste TikTok video link here"
-                    class="w-full h-14 bg-gray-800/80 border border-gray-700 text-white rounded-xl px-5 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 flex-1 px-4 py-3 rounded-md bg-[#F9E2D2] focus:ring-2 focus:ring-blue-600"
+                    class="w-full h-14 border-gray-700 text-white rounded-xl px-5 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-transparent transition-all duration-300 flex-1 px-4 py-3 rounded-md bg-[#F9E2D2] focus:ring-2 focus:ring-blue-600"
                     />
                       <button  type="button" 
                         onClick={handlePaste} 
