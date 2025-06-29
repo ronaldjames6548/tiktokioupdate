@@ -6,12 +6,12 @@ import { getArticleReadingTime } from "@utils/blog";
 import { localizePath } from "astro-i18next";
 import { Icon } from "astro-icon/components";
 import i18next, { changeLanguage } from "i18next";
-
-changeLanguage("it");
+import { t } from "i18next";
+changeLanguage("en");
 
 // Generate a new path for every collection post
 export async function getStaticPaths() {
-	changeLanguage("it");
+	changeLanguage("en");
 	const blogEntries = await getCollection("blog");
 	var localizedBlogEntries = blogEntries.filter((entry) =>
 		entry.slug.startsWith(i18next.language),
@@ -76,7 +76,7 @@ const readTime = getArticleReadingTime(post.body);
 			<a href={localizePath("/blog")}>
 				<div class="flex flex-row align-middle justify-center dark:text-stone-200">
 					<Icon name="tabler:chevron-left" class="w-6 h-6" />
-					<p class="ml-2">Back to blog</p>
+					<p class="ml-2">{t("mics.back_blog")}</p>
 				</div>
 			</a>
 		</div>
