@@ -39,14 +39,18 @@ export async function getStaticPaths() {
 }
 // Get the post directly from the prop on render
 const { posts, category, lang } = Astro.props;
+const pageTitle = `${t("mics.category_title1")} ${category} ${t("mics.category_title2")}`;
+
 ---
-<Layout title={t("mics.category_title1")} ${category} {t("mics.category_title2")}>
-<Layout title="Blog">
+<Layout title={pageTitle}>
 	<Container>
 		<Sectionhead>
-			<Fragment slot="title">{t("mics.category_title1")} ${category} {t("mics.category_title2")}</Fragment>
-			<Fragment slot="desc">{t("mics.category_desc")} ${category} {t("mics.category_desc2")}</Fragment>
+			<Fragment slot="title">{pageTitle}</Fragment>
+            <Fragment slot="desc">
+                {`${t("mics.category_desc")} ${category} ${t("mics.category_desc2")}`}
+            </Fragment>
 		</Sectionhead>
 		<Posts posts={posts} />
 	</Container>
 </Layout>
+
