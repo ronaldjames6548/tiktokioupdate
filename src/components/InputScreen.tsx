@@ -80,9 +80,9 @@ function InputScreen({}: Props) {
 
 {/* input data start */}
 <div class="max-w-6xl mx-auto">
-    <div class="download-box p-1 bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 rounded-2xl shadow-xl">
-        <div class="bg-gray-900/90 backdrop-blur-md rounded-xl p-6">
-            <form class="flex flex-col md:flex-row items-stretch md:items-center gap-2 p-4"
+    <div class="download-box p-1 rounded-2xl shadow-xl">
+        <div class="backdrop-blur-md rounded-xl">
+            <form class="flex flex-col md:flex-row items-stretch md:items-center gap-2"
               onSubmit={(e) => {
               e.preventDefault();
               if (!url()) {
