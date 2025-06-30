@@ -37,8 +37,8 @@ const makeTitle = title
 		<meta name="generator" content={Astro.generator} />
 		<meta name="theme-color" content="#ffffff" />
 		<HeadHrefLangs />
-		<!-- Fallback x-default -->
-		<link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname, Astro.site).toString()} />
+		<link rel="alternate" hreflang="x-default" href={canonicalURL} />
+		<link rel="alternate" hreflang={i18next.language} href={canonicalURL} />
 		<script src="https://analytics.ahrefs.com/analytics.js" data-key="0dTMtlpRua4NA2PFEKPeiw" async></script>
 		<ViewTransitions />
 
