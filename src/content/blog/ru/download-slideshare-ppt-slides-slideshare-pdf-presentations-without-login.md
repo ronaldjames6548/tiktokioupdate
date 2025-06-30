@@ -1,5 +1,5 @@
 ---
-title: Download SlideShare PPT Slides SlideShare PDF Presentations Without Login
+title: Download SlideShare PPT Slides PDF Presentations no Login
 
 draft: false
 author: Jon Doe 

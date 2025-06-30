@@ -25,7 +25,7 @@ const { title, lang = null } = Astro.props;
 
 const makeTitle = title
 	? `${title}`
-	: `${t("site.dtv_title")}`;
+	: `${t("site.tvd_title")}`;
 ---
 
 <!doctype html>
@@ -45,7 +45,7 @@ const makeTitle = title
 
 		<SEO
   title={makeTitle}
-  description={t("site.description")}
+  description={t("site.tvd_description")}
   canonical={canonicalURL}
   openGraph={{
     basic: {

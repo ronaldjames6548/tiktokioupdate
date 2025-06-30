@@ -1,5 +1,5 @@
 ---
-title: How to download all of your Tiktok videos with online Tiktok downloader
+title: How to download Tiktok videos with online Tiktok downloader
 draft: false
 author: Jon Doe 
 tags:
@@ -7,7 +7,7 @@ tags:
 
 image:
   src: /images/tiktok-downloader-tiktokio.webp
-  alt: How to download all of your Tiktok videos with online Tiktok downloader
+  alt: How to download Tiktok videos with online Tiktok downloader
 snippet: In the world of social media marketing, a new player is making a
   significant impact TikTok. This guide explores the potential of TikTok ads and
   how to harness them effectively

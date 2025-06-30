@@ -22,7 +22,7 @@ In this blog post, we will show you exactly how to [download TikTok videos](http
 
 Well, then let’s begin.
 
-# **Why Save TikTok Videos?**
+## **Why Save TikTok Videos?**
 
 Before we go into how you can do it, you might be wondering: Why even download a TikTok video? There are actually some good reasons:
 
@@ -36,7 +36,7 @@ Before we go into how you can do it, you might be wondering: Why even download a
 
 Now that we know why you might want to save TikTok videos, let us go into details on how you do it.
 
-# **How to Download TikTok Videos on iPhone**
+## **How to Download TikTok Videos on iPhone**
 
 Though TikTok allows users to download videos from its app, videos have restrictions in downloading. Now, this is how you can save videos from TikTok:
 
@@ -56,7 +56,7 @@ Choose the option to [download tiktok video without watermark](https://tiktokio.
 * Does not require app installation. Fastand free downloads.  
 * Gets rid of watermarks, so the video is clean. Use on iPhone, Android, or PC without restriction.
 
-# **How to Download TikTok Videos on Android**
+## **How to Download TikTok Videos on Android**
 
 For Android users, downloading TikTok videos is just as simple. Here are the steps:
 
@@ -84,13 +84,13 @@ If the “Save video” option is disabled, move on to the next method.
 
    6. The video will download, and you can find it in your Downloads folder or Gallery.
 
-# **Why tiktokio.cam Works Best for Android:**
+## **Why tiktokio.cam Works Best for Android:**
 
 * No need for third-party apps.  
 * Videos are high quality and watermark-free.  
 * Works directly from your browser.
 
-# **How to Download TikTok Videos on PC**
+## **How to Download TikTok Videos on PC**
 
 Sometimes you might want to save TikTok videos on your PC for editing or sharing. Here’s how you can do it:
 
@@ -116,7 +116,7 @@ While this method works, it’s less efficient and may reduce video quality comp
 
 **tiktokio.cam**.
 
-# **Bonus Tip: How to Save Twitter Videos with ssstwitter**
+## **Bonus Tip: How to Save Twitter Videos with ssstwitter**
 
 In addition to downloading TikTok videos, you might also want to save Twitter videos by using [twitter video downloader](https://ssstwitter.kim/) to your device. That’s where **ssstwitter** comes in.
 
