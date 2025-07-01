@@ -8,6 +8,11 @@ import { HeadHrefLangs } from "astro-i18next/components";
 import { SEO } from "astro-seo";
 import i18next from "i18next";
 import { t } from "i18next";
+import { getAlternateLinks } from "../utils/getAlternateLinks";
+
+const currentPath = new URL(Astro.url).pathname;
+const alternateLinks = getAlternateLinks(currentPath);
+
 
 export interface Props {
 	title?: string;
@@ -35,33 +40,11 @@ const makeTitle = title
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="theme-color" content="#ffffff" />
-		
-		
-<script is:inline>
-  const currentPath = new URL(Astro.url).pathname;
-  // List of all available locales
-  const locales = ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"];
-  
-  const alternateLinks = [];
-  for (const locale of locales) {
-    // Skip default lang if needed (e.g. no suffix for English)
-    if (locale === "en" && Astro.config.i18n.defaultLangHasNoSuffix) continue;
-
-    const localizedPath = `/${locale}${currentPath}`;
-    
-    // Only add hreflang tag if file exists
-    try {
-      await import(`../pages${localizedPath}.astro`);
-      alternateLinks.push({ hreflang: locale, href: localizedPath });
-    } catch (e) {
-      // No such page exists in this locale – skip it
-    }
-  }
-</script>
-
-{alternateLinks.map(({ hreflang, href }) => (
+		{alternateLinks.map(({ hreflang, href }) => (
   <link rel="alternate" hreflang={hreflang} href={new URL(href, Astro.site)} />
-))}		
+))}
+		
+		
 		<script src="https://analytics.ahrefs.com/analytics.js" data-key="0dTMtlpRua4NA2PFEKPeiw" async></script>
 		<ViewTransitions />
 
