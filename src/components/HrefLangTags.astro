@@ -1,0 +1,18 @@
+---
+import { getLocales } from "astro-i18next";
+
+const currentUrl = new URL(Astro.url.href);
+const locales = getLocales();
+const defaultLocale = "en"; // match with astro-i18next.config
+---
+
+<link rel="alternate" href={currentUrl.href} hreflang="x-default" />
+{
+  locales.map((locale) => {
+    const url = locale === defaultLocale && Astro.config.i18n.defaultLangHasNoSuffix
+      ? `${Astro.site.origin}${Astro.url.pathname.replace(`/${locale}`, "")}`
+      : `${Astro.site.origin}/${locale}${Astro.url.pathname}`;
+    
+    return <link rel="alternate" href={url} hreflang={locale} />;
+  })
+}

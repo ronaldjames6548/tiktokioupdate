@@ -2,31 +2,28 @@
 export default {
   defaultLocale: "en",
   locales: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
-  
-  // Add these configurations for proper hreflang generation
+
+  // Generate pages for default locale without language suffix in URL
   generateDefaultLanguagePage: true,
   defaultLangHasNoSuffix: true,
+
+  // Set base URL for hreflang canonical URLs
+  baseUrl: "https://tiktokioupdate.vercel.app ",
+
+  // Map locales to their route overrides (optional)
   routeOverrides: {
-    en: "", // Makes English the root (example.com/)
+    en: "", // Root is English
   },
-  
-  // Optional: Customize the URL structure if needed
-  // baseUrl: "https://tiktokioupdate.vercel.app",
-  
+
+  // i18next config
   i18next: {
-    // Your existing i18next configuration
     interpolation: {
-      escapeValue: false,
+      escapeValue: false, // React-like escaping
     },
-    // ... other i18next config
   },
-  
-  // Optional: Configure how language codes appear in hreflang
+
+  // Backend plugin to load translation files
   i18nextPlugins: {
-    languageDetector: {
-      // ... your existing detector config
-    },
-    // This ensures proper hreflang format
     backend: {
       loadPath: "./src/locales/{{lng}}/{{ns}}.json",
     },
