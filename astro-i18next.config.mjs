@@ -3,32 +3,32 @@ export default {
   defaultLocale: "en",
   locales: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
   
-  // Core hreflang settings
+  // Add these configurations for proper hreflang generation
   generateDefaultLanguagePage: true,
   defaultLangHasNoSuffix: true,
-  showDefaultLocale: true, // Ensures default locale appears in hreflang
-  
-  // URL structure configuration
   routeOverrides: {
-    en: "https://tiktokioupdate.vercel.app", // English as root domain
+    en: "", // Makes English the root (example.com/)
   },
-  baseUrl: "https://tiktokioupdate.vercel.app", // Explicit base URL for hreflang
   
-  // i18next configuration
+  // Optional: Customize the URL structure if needed
+  // baseUrl: "https://tiktokioupdate.vercel.app",
+  
   i18next: {
+    // Your existing i18next configuration
     interpolation: {
       escapeValue: false,
     },
+    // ... other i18next config
+  },
+  
+  // Optional: Configure how language codes appear in hreflang
+  i18nextPlugins: {
+    languageDetector: {
+      // ... your existing detector config
+    },
+    // This ensures proper hreflang format
     backend: {
       loadPath: "./src/locales/{{lng}}/{{ns}}.json",
     },
-    supportedLngs: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"], // Must match locales
-    fallbackLng: "en",
-    cleanCode: true, // Uses standard language codes
-    nonExplicitSupportedLngs: false, // Requires exact matches
   },
-  
-  // Optional but recommended for SEO
-  redirectToDefaultLocale: true,
-  trailingSlash: "never", // Consistent URL endings
 };
