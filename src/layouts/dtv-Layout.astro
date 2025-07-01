@@ -37,7 +37,8 @@ const makeTitle = title
 		<meta name="generator" content={Astro.generator} />
 		<meta name="theme-color" content="#ffffff" />
 		<HeadHrefLangs />
-
+		<link rel="alternate" hreflang="x-default" href={canonicalURL} />
+		<link rel="alternate" hreflang={i18next.language} href={canonicalURL} />
 		<ViewTransitions />
 
 		<!-- Global CSS -->
