@@ -1,5 +1,5 @@
 ---
-title: Using TikTok for More Than Entertainment How Digital Platforms Empower Users with Legal Knowledge
+title: Using TikTok, How Tiktok Empower Users with Knowledge
 draft: false
 author: Jon Doe 
 tags:
