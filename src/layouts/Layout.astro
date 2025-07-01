@@ -8,99 +8,96 @@ import { HeadHrefLangs } from "astro-i18next/components";
 import { SEO } from "astro-seo";
 import i18next from "i18next";
 import { t } from "i18next";
-import { getAlternateLinks } from "../utils/getAlternateLinks";
-
-const currentPath = new URL(Astro.url).pathname;
-const alternateLinks = getAlternateLinks(currentPath);
-
 
 export interface Props {
-	title?: string;
-	lang?: string;
+  title?: string;
+  lang?: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-	"/meta/opengraph.webp",
-	Astro.site,
+  "/meta/opengraph.webp",
+  Astro.site,
 ).toString();
 
 const { title, lang = null } = Astro.props;
 
 const makeTitle = title
-	? `${title}`
-	: `${t("site.title")}`;
+  ? `${title}`
+  : `${t("site.title")}`;
 ---
-<!doctype html>
+
 <html lang={lang ?? i18next.language}>
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<meta name="theme-color" content="#ffffff" />
-		{alternateLinks.map(({ hreflang, href }) => (
-  <link rel="alternate" hreflang={hreflang} href={new URL(href, Astro.site)} />
-))}
-		
-		
-		<script src="https://analytics.ahrefs.com/analytics.js" data-key="0dTMtlpRua4NA2PFEKPeiw" async></script>
-		<ViewTransitions />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="theme-color" content="#ffffff" />
 
-		<!-- Global CSS -->
-		<link rel="stylesheet" href="/index.css" />
+    <!-- Automatically generate hreflang tags -->
+    <HeadHrefLangs />
 
-		<SEO
-  title={makeTitle}
-  description={t("site.description")}
-  canonical={canonicalURL}
-  openGraph={{
-    basic: {
-      url: canonicalURL,
-      type: "website",
-      title: makeTitle,  
-      image: resolvedImageWithDomain,
-    },
-    image: {
-      alt: t("hero.title"),
-    },
-  }}
-/>
-<!-- Add Twitter Card tags here -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content={makeTitle} />
-  <meta name="twitter:description" content={t("site.description")} />
-  <meta name="twitter:image" content={resolvedImageWithDomain} />
-  <meta name="twitter:site" content="@YourTwitterHandle" /> <!-- Replace with your handle -->
-  <meta name="twitter:creator" content="@AuthorTwitterHandle" /> <!-- Optional: Author handle -->
+    <script src="https://analytics.ahrefs.com/analytics.js " data-key="0dTMtlpRua4NA2PFEKPeiw" async></script>
+    <ViewTransitions />
 
-		<script is:inline>
-			function handleThemeChange() {
-				if (localStorage.theme === "dark" || (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
-					document.documentElement.classList.add("dark");
-				} else {
-					document.documentElement.classList.remove("dark");
-				}
-			}
-			handleThemeChange();
-			document.removeEventListener("astro:after-swap", handleThemeChange);
-			document.addEventListener("astro:after-swap", handleThemeChange);
-		</script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="/index.css" />
 
-		{pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
-		<script src="/src/pwa.ts"></script>
-	</head>
-	<body class="dark:bg-stone-950">
-		<Navbar />
-		<slot />
-		<Footer />
-		<style is:global>
-			/* Improve Page speed */
-			/* https://css-tricks.com/almanac/properties/c/content-visibility/ */
-			img {
-				content-visibility: auto;
-			}
-		</style>
-	</body>
+    <SEO
+      title={makeTitle}
+      description={t("site.description")}
+      canonical={canonicalURL}
+      openGraph={{
+        basic: {
+          url: canonicalURL,
+          type: "website",
+          title: makeTitle,
+          image: resolvedImageWithDomain,
+        },
+        image: {
+          alt: t("hero.title"),
+        },
+      }}
+    />
+    <!-- Add Twitter Card tags here -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={makeTitle} />
+    <meta name="twitter:description" content={t("site.description")} />
+    <meta name="twitter:image" content={resolvedImageWithDomain} />
+    <meta name="twitter:site" content="@YourTwitterHandle" /> <!-- Replace with your handle -->
+    <meta name="twitter:creator" content="@AuthorTwitterHandle" /> <!-- Optional: Author handle -->
+
+    <script is:inline>
+      function handleThemeChange() {
+        if (
+          localStorage.theme === "dark" ||
+          (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
+        ) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      }
+      handleThemeChange();
+      document.removeEventListener("astro:after-swap", handleThemeChange);
+      document.addEventListener("astro:after-swap", handleThemeChange);
+    </script>
+
+    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+    <script src="/src/pwa.ts"></script>
+  </head>
+  <body class="dark:bg-stone-950">
+    <Navbar />
+    <slot />
+    <Footer />
+    <style is:global>
+      /* Improve Page speed */
+      /* https://css-tricks.com/almanac/properties/c/content-visibility/  */
+      img {
+        content-visibility: auto;
+      }
+    </style>
+  </body>
 </html>
