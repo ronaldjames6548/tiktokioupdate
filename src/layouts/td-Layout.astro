@@ -4,7 +4,6 @@ import { pwaInfo } from "virtual:pwa-info";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter";
-import HrefLangTags from "@components/HrefLangTags.astro";
 import { HeadHrefLangs } from "astro-i18next/components";
 import { SEO } from "astro-seo";
 import i18next from "i18next";
@@ -38,8 +37,9 @@ const makeTitle = title
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Automatically generate hreflang tags -->
-    <HrefLangTags />
-
+<HeadHrefLangs />
+<!-- Fallback x-default -->
+<link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname, Astro.site).toString()} />
     <script src="https://analytics.ahrefs.com/analytics.js " data-key="0dTMtlpRua4NA2PFEKPeiw" async></script>
     <ViewTransitions />
 
