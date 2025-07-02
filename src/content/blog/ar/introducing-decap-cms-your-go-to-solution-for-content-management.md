@@ -81,7 +81,7 @@ collections:
 	  
 في عصر Jamstack، يمهد Decap CMS الطريق لنظام إدارة محتوى حديث قائم على Git. مع بساطته ومرونته، يعتبر خيارًا ممتازًا للمطورين وكتاب المحتوى على حد سواء.
 
-<a href="#top">[العودة إلى الأعلى]</a>
+**[Read More for: Buy a Tiktok account a smart shortcut for fast growth](ru/blog/buy-a-tiktok-account-a-smart-shortcut-for-fast-growth "buy a tiktok account a smart shortcut for fast growth")**
 
 
 ### ملاحظات:
