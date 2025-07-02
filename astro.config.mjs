@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
-
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { autolinkConfig } from "./plugins/rehype-autolink-config";
 import rehypeSlug from "rehype-slug";
@@ -13,7 +12,7 @@ import solidJs from "@astrojs/solid-js";
 import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
-  site: "https://tiktokioupdate.vercel.app", // Removed trailing slash
+  site: "https://tiktokioupdate.vercel.app/",
   output: "hybrid",
   adapter: vercel({
     webAnalytics: {
@@ -66,48 +65,28 @@ export default defineConfig({
     }),
     icon(),
     solidJs(),
-    sitemap({
-      i18n: {
-        defaultLocale: "en", // Added i18n config
-        locales: {
-          es: "es",
-          fr: "fr",
-          ar: "ar",
-          it: "it",
-          de: "de",
-          hi: "hi",
-          id: "id",
-          ko: "ko",
-          ms: "ms",
-          nl: "nl",
-          pt: "pt",
-          ru: "ru",
-          tl: "tl",
-          tr: "tr"
-        }
-      },
-      trailingSlash: false, // Ensures no double slashes
-      filter(page) {
-        const url = new URL(page, 'https://tiktokioupdate.vercel.app');
-        
-        // All non-English language codes
-        const nonEnglishLangs = ['ar', 'it', 'de', 'es', 'fr', 'hi', 'id', 'ko', 'ms', 'nl', 'pt', 'ru', 'tl', 'tr'];
-        
-        // Should exclude if:
-        const shouldExclude = 
-          // Non-English blog posts (but keeps /{lang}/blog/ index pages)
-          nonEnglishLangs.some(lang => 
-            url.pathname.startsWith(`/${lang}/blog/`) && 
-            url.pathname !== `/${lang}/blog/`
-          ) ||
-          // Pagination, tags, categories
-          /\/blog\/\d+\//.test(url.pathname) ||
-          url.pathname.includes('/tag/') || 
-          url.pathname.includes('/category/');
+	sitemap({
+  filter(page) {
+    const url = new URL(page, 'https://tiktokioupdate.vercel.app');
+    
+    // All non-English language codes
+    const nonEnglishLangs = ['ar', 'it', 'de', 'es', 'fr', 'hi', 'id', 'ko', 'ms', 'nl', 'pt', 'ru', 'tl', 'tr'];
+    
+    // Should exclude if:
+    const shouldExclude = 
+      // Non-English blog posts (but keeps /{lang}/blog/ index pages)
+      nonEnglishLangs.some(lang => 
+        url.pathname.startsWith(`/${lang}/blog/`) && 
+        url.pathname !== `/${lang}/blog/`
+      ) ||
+      // Pagination, tags, categories
+      /\/blog\/\d+\//.test(url.pathname) ||
+      url.pathname.includes('/tag/') || 
+      url.pathname.includes('/category/');
 
-        return !shouldExclude;
-      }
-    })
+    return !shouldExclude;
+  }
+})
   ],
   markdown: {
     rehypePlugins: [rehypeSlug, [rehypeAutolinkHeadings, autolinkConfig]]
