@@ -1,7 +1,9 @@
 ---
 import { getUrl, locales } from "../utils/localize";
 
-const { Astro } = arguments; // 👈 Get Astro from component context
+// ✅ Only one declaration
+const { Astro } = arguments;
+
 const currentPath = Astro.url.pathname;
 ---
 
