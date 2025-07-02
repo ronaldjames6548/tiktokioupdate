@@ -31,69 +31,67 @@ const makeTitle = title
 
 <html lang={lang ?? i18next.language}>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="theme-color" content="#ffffff" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="generator" content={Astro.generator} />
+  <meta name="theme-color" content="#ffffff" />
 
-    <!-- Automatically generate hreflang tags -->
-<HrefLangTags />
+  <!-- Automatically generate hreflang tags -->
+  <HrefLangTags />
 
-<!-- Better approach -->
-<link rel="alternate" hreflang="x-default" href={getUrl('en')} />
+  <script src="https://analytics.ahrefs.com/analytics.js " data-key="HyoQZaoyL3EKgb7MW1RuWA" async></script>
+  <ViewTransitions />
 
-<script src="https://analytics.ahrefs.com/analytics.js" data-key="HyoQZaoyL3EKgb7MW1RuWA" async></script>
-    <ViewTransitions />
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="/index.css" />
 
-    <!-- Global CSS -->
-    <link rel="stylesheet" href="/index.css" />
+  <SEO
+    title={makeTitle}
+    description={t("site.description")}
+    canonical={canonicalURL}
+    openGraph={{
+      basic: {
+        url: canonicalURL,
+        type: "website",
+        title: makeTitle,
+        image: resolvedImageWithDomain,
+      },
+      image: {
+        alt: t("hero.title"),
+      },
+    }}
+  />
 
-    <SEO
-      title={makeTitle}
-      description={t("site.description")}
-      canonical={canonicalURL}
-      openGraph={{
-        basic: {
-          url: canonicalURL,
-          type: "website",
-          title: makeTitle,
-          image: resolvedImageWithDomain,
-        },
-        image: {
-          alt: t("hero.title"),
-        },
-      }}
-    />
-    <!-- Add Twitter Card tags here -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content={makeTitle} />
-    <meta name="twitter:description" content={t("site.description")} />
-    <meta name="twitter:image" content={resolvedImageWithDomain} />
-    <meta name="twitter:site" content="@YourTwitterHandle" /> <!-- Replace with your handle -->
-    <meta name="twitter:creator" content="@AuthorTwitterHandle" /> <!-- Optional: Author handle -->
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={makeTitle} />
+  <meta name="twitter:description" content={t("site.description")} />
+  <meta name="twitter:image" content={resolvedImageWithDomain} />
+  <meta name="twitter:site" content="@YourTwitterHandle" />
+  <meta name="twitter:creator" content="@AuthorTwitterHandle" />
 
-    <script is:inline>
-      function handleThemeChange() {
-        if (
-          localStorage.theme === "dark" ||
-          (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-        ) {
-          document.documentElement.classList.add("dark");
-        } else {
-          document.documentElement.classList.remove("dark");
-        }
+  <!-- Theme Switching -->
+  <script is:inline>
+    function handleThemeChange() {
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
       }
-      handleThemeChange();
-      document.removeEventListener("astro:after-swap", handleThemeChange);
-      document.addEventListener("astro:after-swap", handleThemeChange);
-    </script>
+    }
+    handleThemeChange();
+    document.removeEventListener("astro:after-swap", handleThemeChange);
+    document.addEventListener("astro:after-swap", handleThemeChange);
+  </script>
 
-    {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
-    <script src="/src/pwa.ts"></script>
-	
-
-  </head>
+  {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
+  <script src="/src/pwa.ts"></script>
+</head>
   <body class="dark:bg-stone-950">
     <Navbar />
     <slot />

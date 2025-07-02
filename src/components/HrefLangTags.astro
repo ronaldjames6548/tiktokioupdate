@@ -1,32 +1,16 @@
 ---
-const locales = ['en', 'de', 'it', 'fr', 'es', 'hi', 'ar', 'id', 'ru', 'pt', 'ko', 'tl', 'nl', 'ms', 'tr']; // Add all supported locales here
-const currentPath = Astro.url.pathname; // e.g., /about/
-const site = Astro.site.origin;
+import { getUrl, locales } from "../utils/localize";
 
-// Function to get localized path
-function localizePath(locale: string) {
-  const segments = currentPath.split('/').filter(Boolean);
-  if (segments[0] === 'en' || segments[0] === 'de') {
-    segments[0] = locale;
-  } else {
-    segments.unshift(locale);
-  }
-  return '/' + segments.join('/') + (currentPath.endsWith('/') ? '' : '/');
-}
-
-// Get current full URL
-function getUrl(locale: string) {
-  return new URL(localizePath(locale), site).toString();
-}
+const currentPath = Astro.url.pathname;
 ---
 
 <!-- Canonical -->
-<link rel="canonical" href={getUrl(locales[0])} />
+<link rel="canonical" href={getUrl(locales[0], currentPath)} />
 
 <!-- Alternate Hreflangs -->
 {locales.map((locale) => (
-  <link rel="alternate" href={getUrl(locale)} hreflang={locale} />
+  <link rel="alternate" href={getUrl(locale, currentPath)} hreflang={locale} />
 ))}
 
 <!-- x-default -->
-<link rel="alternate" href={getUrl(locales[0])} hreflang="x-default" />
+<link rel="alternate" hreflang="x-default" href={getUrl('en', currentPath)} />
