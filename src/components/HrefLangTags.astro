@@ -1,19 +1,13 @@
 ---
 import { getUrl, locales } from "../utils/localize";
-
-// ✅ Only one declaration
 const { Astro } = arguments;
-
 const currentPath = Astro.url.pathname;
 ---
 
-<!-- Canonical -->
 <link rel="canonical" href={getUrl(Astro, locales[0], currentPath)} />
 
-<!-- Alternate Hreflangs -->
 {locales.map((locale) => (
   <link rel="alternate" href={getUrl(Astro, locale, currentPath)} hreflang={locale} />
 ))}
 
-<!-- x-default -->
 <link rel="alternate" hreflang="x-default" href={getUrl(Astro, 'en', currentPath)} />
