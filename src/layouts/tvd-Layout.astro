@@ -38,9 +38,10 @@ const makeTitle = title
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Automatically generate hreflang tags -->
-<HeadHrefLangs />
+<HrefLangTags />
+
 <!-- Fallback x-default -->
-<link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname, Astro.site).toString()} />
+<link rel="alternate" hreflang="x-default" href={getUrl('en')} />
     <ViewTransitions />
 
     <!-- Global CSS -->

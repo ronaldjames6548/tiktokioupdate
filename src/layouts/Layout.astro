@@ -38,9 +38,11 @@ const makeTitle = title
     <meta name="theme-color" content="#ffffff" />
 
     <!-- Automatically generate hreflang tags -->
-<HeadHrefLangs />
-<!-- Fallback x-default -->
-<link rel="alternate" hreflang="x-default" href={new URL(Astro.url.pathname, Astro.site).toString()} />
+<HrefLangTags />
+
+<!-- Better approach -->
+<link rel="alternate" hreflang="x-default" href={getUrl('en')} />
+
 <script src="https://analytics.ahrefs.com/analytics.js" data-key="HyoQZaoyL3EKgb7MW1RuWA" async></script>
     <ViewTransitions />
 

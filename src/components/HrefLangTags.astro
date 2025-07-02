@@ -1,18 +1,32 @@
 ---
-import { getLocales } from "astro-i18next";
+const locales = ['en', 'de', 'it', 'fr' 'es', 'hi' 'ar', 'id' 'ru', 'pt', 'ko' 'tl', 'nl' 'ms', 'tr']; // Add all supported locales here
+const currentPath = Astro.url.pathname; // e.g., /about/
+const site = Astro.site.origin;
 
-const currentUrl = new URL(Astro.url.href);
-const locales = getLocales();
-const defaultLocale = "en"; // match with astro-i18next.config
+// Function to get localized path
+function localizePath(locale: string) {
+  const segments = currentPath.split('/').filter(Boolean);
+  if (segments[0] === 'en' || segments[0] === 'de') {
+    segments[0] = locale;
+  } else {
+    segments.unshift(locale);
+  }
+  return '/' + segments.join('/') + (currentPath.endsWith('/') ? '' : '/');
+}
+
+// Get current full URL
+function getUrl(locale: string) {
+  return new URL(localizePath(locale), site).toString();
+}
 ---
 
-<link rel="alternate" href={currentUrl.href} hreflang="x-default" />
-{
-  locales.map((locale) => {
-    const url = locale === defaultLocale && Astro.config.i18n.defaultLangHasNoSuffix
-      ? `${Astro.site.origin}${Astro.url.pathname.replace(`/${locale}`, "")}`
-      : `${Astro.site.origin}/${locale}${Astro.url.pathname}`;
-    
-    return <link rel="alternate" href={url} hreflang={locale} />;
-  })
-}
+<!-- Canonical -->
+<link rel="canonical" href={getUrl(locales[0])} />
+
+<!-- Alternate Hreflangs -->
+{locales.map((locale) => (
+  <link rel="alternate" href={getUrl(locale)} hreflang={locale} />
+))}
+
+<!-- x-default -->
+<link rel="alternate" href={getUrl(locales[0])} hreflang="x-default" />
