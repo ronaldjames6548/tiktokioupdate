@@ -1,7 +1,8 @@
 // src/utils/localize.ts
 import { Astro } from "astro";
 
-export const locales = ['en', 'de']; // Add all your supported locales
+export const locales = ['en', 'it', 'fr', 'de', 'es', 'hi', 'ar', 'id', 'ru', 'pt', 'ko', 'tl', 'nl', 'ms', 'tr']; // Add all your supported locales
+
 
 export function getUrl(locale: string, path: string = ''): string {
   const segments = path.split('/').filter(Boolean);
