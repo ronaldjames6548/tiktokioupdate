@@ -1,6 +1,6 @@
 // src/utils/localize.ts
 
-export const locales = ['en', 'it', 'fr', 'de', 'es', 'hi', 'ar', 'id', 'ru', 'pt', 'ko', 'tl', 'nl', 'ms', 'tr'];
+export const locales = ['it', 'fr', 'de', 'es', 'hi', 'ar', 'id', 'ru', 'pt', 'ko', 'tl', 'nl', 'ms', 'tr'];
 
 /**
  * Generates localized URL for hreflang and navigation
