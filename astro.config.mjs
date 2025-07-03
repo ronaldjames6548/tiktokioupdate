@@ -12,7 +12,7 @@ import solidJs from "@astrojs/solid-js";
 import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
-  site: "https://tiktokioupdate.vercel.app",
+  site: "https://tiktokio.cam",
   output: "hybrid",
   adapter: vercel({
     webAnalytics: {
@@ -67,7 +67,7 @@ export default defineConfig({
     solidJs(),
 	sitemap({
   filter(page) {
-    const url = new URL(page, 'https://tiktokioupdate.vercel.app');
+    const url = new URL(page, 'https://tiktokio.cam');
     
     // All non-English language codes
     const nonEnglishLangs = ['ar', 'it', 'de', 'es', 'fr', 'hi', 'id', 'ko', 'ms', 'nl', 'pt', 'ru', 'tl', 'tr'];

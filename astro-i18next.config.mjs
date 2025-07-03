@@ -8,7 +8,7 @@ export default {
   defaultLangHasNoSuffix: true,
 
   // Set base URL for hreflang canonical URLs
-  baseUrl: "https://tiktokioupdate.vercel.app",
+  baseUrl: "https://tiktokio.cam",
 
   // Map locales to their route overrides (optional)
   routeOverrides: {
