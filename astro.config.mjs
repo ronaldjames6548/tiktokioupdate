@@ -12,7 +12,7 @@ import solidJs from "@astrojs/solid-js";
 import vercel from '@astrojs/vercel/serverless';
 
 export default defineConfig({
-  site: "https://tiktokioupdate.vercel.app/",
+  site: "https://tiktokioupdate.vercel.app",
   output: "hybrid",
   adapter: vercel({
     webAnalytics: {
