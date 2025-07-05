@@ -63,49 +63,70 @@ function InputScreen({}: Props) {
   };
 
   const loadAd = () => {
-    // Clear previous ad container content
     const adContainer = document.getElementById("ad-banner");
-    if (adContainer) {
-      adContainer.innerHTML = '';
-      adContainer.style.minHeight = '280px';
-      adContainer.style.width = '336px';
-      adContainer.style.margin = '0 auto';
-    }
+    if (!adContainer) return;
 
-    // Check if script already exists
+    // Clear previous content
+    adContainer.innerHTML = '';
+
+    // Create the AC script if it doesn't exist
     if (!document.getElementById("aclib")) {
       const script = document.createElement("script");
       script.id = "aclib";
-      script.src = "//acscdn.com/script/aclib.js";
+      script.src = "https://acscdn.com/script/aclib.js";
       script.async = true;
       script.onload = () => {
-        setAdLoaded(true);
         if (typeof aclib !== 'undefined') {
-          aclib.runBanner({ 
-            zoneId: '9480206',
-            width: 336,
-            height: 280
-          });
+          runAdcashBanner();
+        } else {
+          showFallbackAd();
         }
       };
       script.onerror = () => {
-        console.error("Failed to load Adcash script");
-        if (adContainer) {
-          adContainer.innerHTML = '<div class="ad-placeholder">Advertisement</div>';
-        }
+        showFallbackAd();
       };
       document.body.appendChild(script);
     } else {
-      // If script already loaded, just run the banner
-      setAdLoaded(true);
+      // Script already exists, just run the banner
       if (typeof aclib !== 'undefined') {
-        aclib.runBanner({ 
-          zoneId: '9480206',
-          width: 336,
-          height: 280
-        });
+        runAdcashBanner();
+      } else {
+        showFallbackAd();
       }
     }
+  };
+
+  const runAdcashBanner = () => {
+    const adContainer = document.getElementById("ad-banner");
+    if (!adContainer) return;
+
+    try {
+      adContainer.innerHTML = '<div id="ac-banner"></div>';
+      aclib.runBanner({
+        zoneId: '9480206',
+        width: 336,
+        height: 280,
+        container: document.getElementById("ac-banner")
+      });
+      setAdLoaded(true);
+    } catch (e) {
+      console.error("Adcash error:", e);
+      showFallbackAd();
+    }
+  };
+
+  const showFallbackAd = () => {
+    const adContainer = document.getElementById("ad-banner");
+    if (!adContainer) return;
+    
+    adContainer.innerHTML = `
+      <div style="width:336px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;border:1px dashed #ddd;">
+        <div style="text-align:center;color:#666;">
+          <p>Advertisement</p>
+          <p style="font-size:12px;margin-top:8px;">Ad failed to load</p>
+        </div>
+      </div>
+    `;
   };
 
   onCleanup(() => {
@@ -117,7 +138,7 @@ function InputScreen({}: Props) {
     <div class="max-w-6xl mx-auto mt-8 px-4">
       <Toaster />
 
-      {/* Input Form Section - Preserved exactly as in your original */}
+      {/* Input Form Section */}
       <div class="max-w-6xl mx-auto">
         <div class="download-box rounded-2xl">
           <div class="bg-cyan-800/80 rounded-xl backdrop-blur-md p-4">
@@ -190,11 +211,11 @@ function InputScreen({}: Props) {
                     </div>
                     <div class="text-gray-400 text-xs mb-2">{data()!.result.desc}</div>
                     
-                    {/* Ad Banner Container - Now properly sized */}
+                    {/* Ad Banner Container */}
                     <div class="flex justify-center my-4">
-                      <div id="ad-banner" class="bg-gray-100/20 rounded-lg overflow-hidden">
+                      <div id="ad-banner" style="min-height:280px;width:336px;margin:0 auto;">
                         {!adLoaded() && (
-                          <div class="w-[336px] h-[280px] flex items-center justify-center">
+                          <div style="width:336px;height:280px;display:flex;align-items:center;justify-content:center;background:#f5f5f5;border-radius:8px;">
                             <div class="animate-pulse text-gray-400">Loading advertisement...</div>
                           </div>
                         )}
