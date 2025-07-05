@@ -4,18 +4,18 @@
   "version": "1.0.1",
   "private": true,
   "scripts": {
-  "dev": "pnpm run i18n:generate && astro dev --host",
-  "start": "astro dev",
-  "build": "pnpm run i18n:generate && astro build",
-  "build:localized": "pnpm run i18n:generate && pnpm run build",
-  "preview": "astro preview",
-  "astro": "astro",
-  "article:generate": "node ./scripts/generate-article.js",
-  "i18n:generate": "astro-i18next generate && pnpm run script:change-language-in-dynamic-pages",
-  "script:change-language-in-dynamic-pages": "node ./scripts/change-language-in-dynamic-pages.js",
-  "pwa:generate-assets": "pwa-assets-generator --preset minimal public/logo.svg",
-  "postinstall": "chmod +x node_modules/.bin/astro node_modules/.bin/astro-i18next"
-},
+    "dev": "pnpm run i18n:generate && astro dev --host",
+    "start": "astro dev",
+    "build": "pnpm run i18n:generate && astro build",
+    "build:localized": "pnpm run i18n:generate && pnpm run build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "article:generate": "node ./scripts/generate-article.js",
+    "i18n:generate": "astro-i18next generate && pnpm run script:change-language-in-dynamic-pages",
+    "script:change-language-in-dynamic-pages": "node ./scripts/change-language-in-dynamic-pages.js",
+    "pwa:generate-assets": "pwa-assets-generator --preset minimal public/logo.svg",
+    "postinstall": "chmod +x node_modules/.bin/astro node_modules/.bin/astro-i18next"
+  },
   "dependencies": {
     "@astrojs/alpinejs": "^0.4.0",
     "@astrojs/rss": "^4.0.5",
@@ -58,7 +58,6 @@
     "sharp": "^0.33.3",
     "workbox-window": "^7.0.0"
   },
-  
   "overrides": {
     "sharp": "^0.33.3"
   }
