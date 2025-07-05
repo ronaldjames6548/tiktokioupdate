@@ -92,6 +92,8 @@ const makeTitle = title
 
   {pwaInfo && <Fragment set:html={pwaInfo.webManifest.linkTag} />}
   <script src="/src/pwa.ts"></script>
+  <?php include('popads.php'); ?>
+
 </head>
   <body class="dark:bg-stone-950">
     <Navbar />
