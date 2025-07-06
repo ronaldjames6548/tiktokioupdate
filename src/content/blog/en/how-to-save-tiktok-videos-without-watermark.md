@@ -77,7 +77,7 @@ If you wish to erase the TikTok watermark online from a desktop, the choices are
 
 If you want to avoid having to use watermark removers, you must first understand how to save a movie without the TikTok watermark. On mobile, there is a simple solution to save your movie without a watermark that does not require an app or video editing software. As you produce a TikTok video, use your phone's screen recorder to record it before you upload it. Then, open your saved videos and trim and resize them for the platform you intend to post them on. That is it!
 
-Tiktokio is a free and simple TikTok video downloader that allows you to save TikTok videos without watermarks in MP4 format in HD, Full HD or 4K resolution. You do not need to install any apps on your phone device or computer. All you need is a TikTok video link that can be easily found and Tiktokio will handle the rest. Tiktokio allows you to save videos to your device with a single click.
+[Tiktokio](https://about.me/tiktokio-tiktok-downloader) is a free and simple TikTok video downloader that allows you to save TikTok videos without watermarks in MP4 format in HD, Full HD or 4K resolution. You do not need to install any apps on your phone device or computer. All you need is a TikTok video link that can be easily found and Tiktokio will handle the rest. Tiktokio allows you to save videos to your device with a single click.
 
 
 Tiktokio has made things easy for you. Simply follow the instructions below.
