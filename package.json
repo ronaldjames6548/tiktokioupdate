@@ -58,6 +58,9 @@
     "sharp": "^0.33.3",
     "workbox-window": "^7.0.0"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "overrides": {
     "sharp": "^0.33.3"
   }
