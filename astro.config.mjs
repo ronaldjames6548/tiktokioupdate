@@ -26,7 +26,11 @@ export default defineConfig({
   },
   integrations: [
     tailwind(),
-    astroI18next(),
+    astroI18next({
+      defaultLocale: "en",
+      locales: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
+      showDefaultLocale: false,
+    }),
     alpinejs(),
     AstroPWA({
       mode: "production",
