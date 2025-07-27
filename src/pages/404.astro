@@ -1,36 +1,41 @@
 ---
-import Container from "@components/container.astro";
+// src/pages/ar/404.astro (and other language 404 pages)
+
+// REMOVE this import:
+// import { t, changeLanguage } from "astro-i18next";
+
+// REPLACE with:
+import { t } from "@utils/i18n";
 import Layout from "@layouts/Layout.astro";
-import Hero from "@components/hero.astro";
-import { localizePath } from "astro-i18next";
-import { t, getCurrentLanguage } from "../utils/i18n";
 
-// Get current language from URL
-const currentLang = getCurrentLanguage(Astro.url);
+// REMOVE this line (this is what's causing the error):
+// changeLanguage("ar");
 
-// Create translation function for current language
-const translate = (key: string) => t(key, currentLang);
+// REPLACE with:
+const currentLang = "en"; // Hardcode for this specific page
 
-const title = translate("mics.404_title");
+// Safe translation function
+const safeT = (key: string, fallback: string = key) => {
+  try {
+    if (!key) return fallback;
+    const result = t(key, currentLang);
+    return result && result !== key ? result : fallback;
+  } catch (error) {
+    console.warn(`Translation error for ${key}:`, error);
+    return fallback;
+  }
+};
+
+// Use translations
+const title = safeT("404.title", "Page Not Found");
+const description = safeT("404.description", "The page you're looking for doesn't exist.");
+const goHome = safeT("404.goHome", "Go Home");
 ---
 
-<Layout title={title}>
-	<Container>
-		<Hero />
-	<section class="flex items-center h-full p-16">
-		<div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-			<div class="max-w-md text-center">
-				<h2 class="mb-8 font-bold text-4xl">
-					<span class="sr-only">{translate("mics.404_h2_text")}</span>
-					<span class="text-primary">{translate("mics.404_h2_text2")}</span>
-				</h2>
-				<p class="text-3xl font-semibold md:text-3xl">{translate("mics.404_line1")}</p>
-				<p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">{translate("mics.404_line2")}</p>
-				<a rel="noopener noreferrer" href={localizePath("/")} class="btn ml-4">{translate("mics.404_back")}</a>
-			</div>
-		</div>
-	</section>	
-		
-	</Container>
-	
+<Layout title={title} lang={currentLang} description={description}>
+  <main>
+    <h1>{title}</h1>
+    <p>{description}</p>
+    <a href={currentLang === "en" ? "/" : `/${currentLang}/`}>{goHome}</a>
+  </main>
 </Layout>

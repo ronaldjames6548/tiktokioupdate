@@ -1,34 +1,43 @@
 ---
-import Container from "@components/container.astro";
+// Template for ANY language-specific 404 page
+// Replace LANG_CODE with the actual language (ar, fr, de, etc.)
+
+import { t } from "@utils/i18n";
 import Layout from "@layouts/Layout.astro";
-import Hero from "@components/hero.astro";
 
-import { localizePath } from "astro-i18next";
+// Define the language for this specific page
+const currentLang = "ar"; // Change this: ar, fr, de, it, es, etc.
 
-import { t } from "astro-i18next";
+// Safe translation helper
+const safeT = (key: string, fallback: string = "") => {
+  try {
+    if (!key) return fallback;
+    const result = t(key, currentLang);
+    return result && result !== key ? result : fallback;
+  } catch (error) {
+    console.warn(`Translation error for ${key}:`, error);
+    return fallback;
+  }
+};
 
-changeLanguage("ar");
+// Get translations with fallbacks
+const title = safeT("404.title", "Page Not Found");
+const description = safeT("404.description", "The page you're looking for doesn't exist.");
+const goHomeText = safeT("404.goHome", "Go Home");
 
-const title = "Error 404";
+// Generate home URL based on language
+const homeUrl = currentLang === "en" ? "/" : `/${currentLang}/`;
 ---
 
-<Layout title={translate("mics.404_title")}>
-	<Container>
-		<Hero />
-	<section class="flex items-center h-full p-16">
-		<div class="container flex flex-col items-center justify-center px-5 mx-auto my-8">
-			<div class="max-w-md text-center">
-				<h2 class="mb-8 font-bold text-4xl">
-					<span class="sr-only">{translate("mics.404_h2_text")}</span>
-					<span class="text-primary">{translate("mics.404_h2_text2")}</span>
-				</h2>
-				<p class="text-3xl font-semibold md:text-3xl">{translate("mics.404_line1")}</p>
-				<p class="mt-4 mb-8 text-lg text-muted dark:text-slate-400">{translate("mics.404_line2")}</p>
-				<a rel="noopener noreferrer" href={localizePath("/")} class="btn ml-4">{translate("mics.404_back")}</a>
-			</div>
-		</div>
-	</section>	
-		
-	</Container>
-	
+<Layout title={title} lang={currentLang} description={description}>
+  <main class="flex flex-col items-center justify-center min-h-screen text-center">
+    <h1 class="text-4xl font-bold mb-4">{title}</h1>
+    <p class="text-lg mb-8">{description}</p>
+    <a 
+      href={homeUrl} 
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+    >
+      {goHomeText}
+    </a>
+  </main>
 </Layout>
