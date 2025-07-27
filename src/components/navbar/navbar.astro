@@ -4,26 +4,29 @@ import Link from "@components/ui/link.astro";
 import { localizePath } from "astro-i18next";
 import LanguageSelector from "@components/languageselector.astro";
 import { Icon } from "astro-icon/components";
-import { t } from "i18next";
+import { t, getCurrentLanguage } from "../../utils/i18n";
 
 export const menuitems = [
   {
-    title: "header.blog_link",
+    titleKey: "header.blog_link",
     path: "/blog/how-to-save-tiktok-videos-without-watermark",
   },
   {
-    title: "header.nav_1",
+    titleKey: "header.nav_1",
     path: "/tiktok-downloader",
   },
   {
-    title: "header.nav_2",
+    titleKey: "header.nav_2",
     path: "/download-tiktok-video",
   },
-{
-    title: "header.nav_3",
+  {
+    titleKey: "header.nav_3",
     path: "/tiktok-video-downloader",
   },
 ];
+
+// Get current language
+const currentLang = getCurrentLanguage(Astro.url);
 ---
 
 <div
@@ -103,7 +106,7 @@ export const menuitems = [
                 size="sm"
                 class="mt-[2px]"
               >
-                {t(item.title)}
+                {item.titleKey ? t(item.titleKey, currentLang) : item.title}
                 <svg
                   fill="currentColor"
                   viewBox="0 0 20 20"
@@ -148,7 +151,7 @@ export const menuitems = [
 											}`}
                       x-bind:class="{ 'dark:bg-gray-600': isActive }"
                     >
-                      {subitem.title}
+                      {subitem.titleKey ? t(subitem.titleKey) : subitem.title}
                     </Link>
                   ))}
                 </div>
@@ -174,7 +177,7 @@ export const menuitems = [
               x-bind:class="{ 'dark:bg-gray-600': isActive }"
               data-path={item.path}
             >
-              {t(item.title)}
+              {item.titleKey ? t(item.titleKey, currentLang) : item.title}
             </Link>
           )
         )

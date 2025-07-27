@@ -4,7 +4,9 @@ import { menuitems } from "@components/navbar/navbar.astro";
 import ThemeSelector from "@components/themeselector.astro";
 import logo from "assets/logo.svg";
 import { localizePath } from "astro-i18next";
-import { t } from "i18next";
+import { t, getCurrentLanguage } from "../utils/i18n";
+const currentLang = getCurrentLanguage(Astro.url);
+const translate = (key: string) => t(key, currentLang);
 ---
 
 <footer class="pb-12 pt-12 dark:bg-stone-950">
@@ -15,6 +17,18 @@ import { t } from "i18next";
 			<li role="listitem">
 				<a href={localizePath("/")} class="duration-300 hover:text-gray-900 dark:hover:text-gray-100">Home</a>
 			</li>
+			<li role="listitem">
+				<a href={localizePath("/blog/how-to-save-tiktok-videos-without-watermark")} class="duration-300 hover:text-gray-900 dark:hover:text-gray-100">{translate("hero.blog_link")}</a>
+			</li>
+			<li role="listitem">
+				<a href={localizePath("/blog/how-to-save-tiktok-videos-without-watermark")} class="duration-300 hover:text-gray-900 dark:hover:text-gray-100">{translate("hero.nav_1")}</a>
+			</li>
+			<li role="listitem">
+				<a href={localizePath("/blog/how-to-save-tiktok-videos-without-watermark")} class="duration-300 hover:text-gray-900 dark:hover:text-gray-100">{translate("hero.nav_2")}</a>
+			</li>
+			<li role="listitem">
+				<a href={localizePath("/blog/how-to-save-tiktok-videos-without-watermark")} class="duration-300 hover:text-gray-900 dark:hover:text-gray-100">{translate("hero.nav_3")}</a>
+			</li>
 			{
 				menuitems.map(
 					(item) =>
@@ -22,7 +36,7 @@ import { t } from "i18next";
 						item.path && (
 							<li role="listitem">
 								<a href={localizePath(item.path)} class="duration-300 hover:text-gray-900 dark:hover:text-gray-100">
-									{t(item.title)}
+									{translate(item.title)}
 								</a>
 							</li>
 						)
@@ -172,15 +186,11 @@ import { t } from "i18next";
 			<!--Social Sharing Section-->
 		</div>
 		<div class="flex justify-center mt-12 gap-3">
-			<LanguageSelector
-				showFlag={false}
-				languageMapping={{ en: "English", it: "Italiano" }}
-				class="appearance-none py-1 px-2 rounded bg-slate-100 dark:bg-stone-950"
-			/>
-			<ThemeSelector />
-		</div>
+			
+	<ThemeSelector />
+</div>
 		<div class="mt-4 text-center">
-			<span class="text-sm tracking-wide text-gray-500 dark:text-white">Copyright © {t("features.tiktokio")} 2025 - Present. All rights reserved</span>
+			<span class="text-sm tracking-wide text-gray-500 dark:text-white">Copyright © {translate("features.tiktokio")} 2025 - Present. All rights reserved</span>
 		</div>
 	</div>
 </footer>

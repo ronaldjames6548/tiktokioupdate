@@ -20,12 +20,13 @@ export default {
     interpolation: {
       escapeValue: false, // React-like escaping
     },
+    backend: {
+      loadPath: "/locales/{{lng}}/translation.json",
+    },
   },
 
   // Backend plugin to load translation files
-  i18nextPlugins: {
-    backend: {
-      loadPath: "./src/locales/{{lng}}/{{ns}}.json",
-    },
+  i18nextServerPlugins: {
+    backend: "i18next-http-backend",
   },
 };
