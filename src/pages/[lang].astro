@@ -7,9 +7,10 @@ import Newsletter from "@components/newsletter.astro";
 import Logos from "@components/logos.astro";
 import Layout from "@layouts/Layout.astro";
 import { t } from "../utils/i18n";
+import { supportedLanguages } from "../utils/languages";
 
 // Define supported languages (excluding English)
-const supportedLanguages = ['it', 'fr', 'de', 'es', 'hi', 'ar', 'id', 'ru', 'pt', 'ko', 'tl', 'nl', 'ms', 'tr'];
+// const supportedLanguages = ['it', 'fr', 'de', 'es', 'hi', 'ar', 'id', 'ru', 'pt', 'ko', 'tl', 'nl', 'ms', 'tr'];
 
 export async function getStaticPaths() {
   return supportedLanguages.map((lang) => ({
@@ -27,9 +28,9 @@ if (!supportedLanguages.includes(lang as string)) {
 const currentLang = lang as string;
 const translate = (key: string) => t(key, currentLang);
 ---
-<Layout 
-  title={translate("site.title")} 
-  description={translate("site.description")} 
+<Layout
+  title={translate("site.title")}
+  description={translate("site.description")}
   heroTitle={translate("hero.title")}
   lang={currentLang}
 >
