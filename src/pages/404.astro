@@ -1,7 +1,13 @@
 ---
-import { t } from "../i18n/index";
+import { useTranslation, getLocaleFromURL } from "@utils/translations";
 
-// Initialize with default language
+// Get current locale from URL
+const currentLocale = getLocaleFromURL(Astro.url.pathname);
+
+// Get translation function for current locale
+const t = useTranslation(currentLocale);
+
+// Get translations
 const title = t("404.title");
 const description = t("404.description");
 const goHome = t("404.goHome");

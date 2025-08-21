@@ -4,7 +4,6 @@ import sitemap from "@astrojs/sitemap";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import { autolinkConfig } from "./plugins/rehype-autolink-config";
 import rehypeSlug from "rehype-slug";
-import astroI18next from "astro-i18next";
 import alpinejs from "@astrojs/alpinejs";
 import AstroPWA from "@vite-pwa/astro";
 import icon from "astro-icon";
@@ -19,7 +18,7 @@ export default defineConfig({
       enabled: true,
     },
   }),
-  // Add native Astro i18n config as backup
+  // Add native Astro i18n config  
   i18n: {
     defaultLocale: "en",
     locales: ["en", "ar", "it", "fr", "de", "es", "hi", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
@@ -34,31 +33,7 @@ export default defineConfig({
   },
   integrations: [
     tailwind(),
-    astroI18next({
-      defaultLocale: "en",
-      locales: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
-      showDefaultLocale: false,
-      i18nextServer: {
-        debug: false,
-        fallbackLng: "en",
-        supportedLngs: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
-        ns: ["translation"],
-        defaultNS: "translation",
-        backend: {
-          loadPath: "./public/locales/{{lng}}/{{ns}}.json",
-        },
-      },
-      i18nextClient: {
-        debug: false,
-        fallbackLng: "en",
-        supportedLngs: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
-        ns: ["translation"],
-        defaultNS: "translation",
-        backend: {
-          loadPath: "/locales/{{lng}}/{{ns}}.json",
-        },
-      },
-    }),
+    // Removed astroI18next integration to avoid conflicts
     alpinejs(),
     AstroPWA({
       mode: "production",
