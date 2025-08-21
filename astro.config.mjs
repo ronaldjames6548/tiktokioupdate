@@ -19,6 +19,14 @@ export default defineConfig({
       enabled: true,
     },
   }),
+  // Add native Astro i18n config as backup
+  i18n: {
+    defaultLocale: "en",
+    locales: ["en", "ar", "it", "fr", "de", "es", "hi", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
+    routing: {
+      prefixDefaultLocale: false
+    }
+  },
   vite: {
     define: {
       __DATE__: `'${new Date().toISOString()}'`
@@ -30,6 +38,26 @@ export default defineConfig({
       defaultLocale: "en",
       locales: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
       showDefaultLocale: false,
+      i18nextServer: {
+        debug: false,
+        fallbackLng: "en",
+        supportedLngs: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
+        ns: ["translation"],
+        defaultNS: "translation",
+        backend: {
+          loadPath: "./public/locales/{{lng}}/{{ns}}.json",
+        },
+      },
+      i18nextClient: {
+        debug: false,
+        fallbackLng: "en",
+        supportedLngs: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
+        ns: ["translation"],
+        defaultNS: "translation",
+        backend: {
+          loadPath: "/locales/{{lng}}/{{ns}}.json",
+        },
+      },
     }),
     alpinejs(),
     AstroPWA({
@@ -87,7 +115,6 @@ export default defineConfig({
       /\/blog\/\d+\//.test(url.pathname) ||
       url.pathname.includes('/tag/') || 
       url.pathname.includes('/category/');
-
     return !shouldExclude;
   }
 })

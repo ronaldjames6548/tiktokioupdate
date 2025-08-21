@@ -1,41 +1,23 @@
 ---
-// src/pages/ar/404.astro (and other language 404 pages)
+import { t } from "../i18n/index";
 
-// REMOVE this import:
-// import { t, changeLanguage } from "astro-i18next";
-
-// REPLACE with:
-import { t } from "@utils/i18n";
-import Layout from "@layouts/Layout.astro";
-
-// REMOVE this line (this is what's causing the error):
-// changeLanguage("ar");
-
-// REPLACE with:
-const currentLang = "en"; // Hardcode for this specific page
-
-// Safe translation function
-const safeT = (key: string, fallback: string = key) => {
-  try {
-    if (!key) return fallback;
-    const result = t(key, currentLang);
-    return result && result !== key ? result : fallback;
-  } catch (error) {
-    console.warn(`Translation error for ${key}:`, error);
-    return fallback;
-  }
-};
-
-// Use translations
-const title = safeT("404.title", "Page Not Found");
-const description = safeT("404.description", "The page you're looking for doesn't exist.");
-const goHome = safeT("404.goHome", "Go Home");
+// Initialize with default language
+const title = t("404.title");
+const description = t("404.description");
+const goHome = t("404.goHome");
 ---
 
-<Layout title={title} lang={currentLang} description={description}>
-  <main>
-    <h1>{title}</h1>
-    <p>{description}</p>
-    <a href={currentLang === "en" ? "/" : `/${currentLang}/`}>{goHome}</a>
-  </main>
-</Layout>
+<html>
+<head>
+    <title>{title}</title>
+    <meta name="description" content={description} />
+</head>
+<body>
+    <main>
+        <h1>404</h1>
+        <h2>{title}</h2>
+        <p>{description}</p>
+        <a href="/">{goHome}</a>
+    </main>
+</body>
+</html>
