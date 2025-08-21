@@ -3,7 +3,13 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Button from "@components/ui/button.astro";
 import Layout from "@layouts/Layout.astro";
-import { t } from "astro-i18next";
+import { astroI18next } from "astro-i18next";
+
+// Initialize astro-i18next
+await astroI18next.init(Astro);
+
+// Get the translation function
+const t = astroI18next.t;
 
 const contacts = [
     {

@@ -1,32 +1,23 @@
-/** @type {import('astro-i18next').AstroI18nextConfig} */
 export default {
   defaultLocale: "en",
-  locales: ["en", "it", "fr", "de", "es", "hi", "ar", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
-
-  // Generate pages for default locale without language suffix in URL
-  generateDefaultLanguagePage: true,
-  defaultLangHasNoSuffix: true,
-
-  // Set base URL for hreflang canonical URLs
-  baseUrl: "https://tiktokio.cam",
-
-  // Map locales to their route overrides (optional)
-  routeOverrides: {
-    en: "", // Root is English
-  },
-
-  // i18next config
-  i18next: {
-    interpolation: {
-      escapeValue: false, // React-like escaping
-    },
+  locales: ["en", "ar", "it", "fr", "de", "es", "hi", "id", "ru", "pt", "ko", "tl", "nl", "ms", "tr"],
+  load: ["server", "client"],
+  i18nextServer: {
+    debug: false,
+    fallbackLng: "en",
+    ns: ["translation"],
+    defaultNS: "translation",
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json",
+      loadPath: "./public/locales/{{lng}}/{{ns}}.json",
     },
   },
-
-  // Backend plugin to load translation files
-  i18nextServerPlugins: {
-    backend: "i18next-http-backend",
+  i18nextClient: {
+    debug: false,
+    fallbackLng: "en",
+    ns: ["translation"],
+    defaultNS: "translation",
+    backend: {
+      loadPath: "/locales/{{lng}}/{{ns}}.json",
+    },
   },
 };
