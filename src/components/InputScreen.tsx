@@ -124,7 +124,7 @@ function InputScreen({}: Props) {
       <div style="width:336px;height:280px;background:#f5f5f5;display:flex;align-items:center;justify-content:center;border-radius:8px;border:1px dashed #ddd;">
         <div style="text-align:center;color:#666;">
           <p>Advertisement</p>
-          <p style="font-size:12px;margin-top:8px;">Ad failed to load</p>
+          <p style="font-size:12px;margin-top:8px;">Ad failed to load.. Please wait</p>
         </div>
       </div>
     `;
